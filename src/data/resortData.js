@@ -130,9 +130,6 @@ export const roomsData = [
       "/city-view-kothi-room.jpg",
       "/113506.jpg"
     ],
-      "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_395,y_0,w_4210,h_3333,r_0,c_crop/q_80,w_1600,dpr_1,f_auto,fl_progressive,c_limit/kesar-bagh-palace-chittorgarh/BLOCK_COURTYARD_2b59e8a0",
-      "/113506.jpg"
-    ],
     features: [
       "Two-Seater Luxury Jacuzzi",
       "Panoramic Bay Jharokha Windows",
