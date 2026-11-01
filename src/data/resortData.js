@@ -1,10 +1,13 @@
 export const resortInfo = {
   name: "Rawal Kothi",
-  fullName: "Rawal Kothi Hotel & Rooftop Restaurant",
+  fullName: "Hotel Rawal Kothi Fort",
   tagline: "Chittorgarh’s Ode to Regal Living",
+  rating: "5.0",
+  ratingCount: "485+",
+  walkingHighlight: "4 minutes walk to Kalika Mata Temple",
   description:
-    "A premier 3-star heritage hotel and cliffside open-air rooftop retreat located just 1.1 km from the iconic Chittorgarh Fort. Featuring hand-painted Mewari peacock frescoes, 1,615 sq. ft. City View luxury suites, authentic Rajput hospitality, and starlit dining overlooking Chittorgarh city lights.",
-  location: "Near Maharana Medicor Sansthan, Kidwai Nagar, Chittorgarh Fort Area, Chittorgarh - 312001, Rajasthan, India",
+    "A premier 5-star rated heritage hotel (5.0 ★ by 485+ guests) and open-air rooftop restaurant situated in Chittorgarh Fort Village, just a 4-minute walk from the historic Kalika Mata Temple and 1.1 km from the main Fort entrance. Featuring 1,615 sq. ft. peacock fresco suites and panoramic sunset dining over the city.",
+  location: "Chittorgarh Fort Village, Near Kalika Mata Temple, Chittorgarh - 312001, Rajasthan, India",
   phoneNumbers: ["+91 86 9014 2444", "+91 91 4585 8110"],
   primaryPhone: "+918690142444",
   email: "reservations@rawalkothi.com",
@@ -12,10 +15,10 @@ export const resortInfo = {
   checkInTime: "12:00 PM",
   checkOutTime: "12:00 PM",
   highlights: [
-    { label: "Fort Proximity", value: "1.1 Km to Fort" },
+    { label: "Guest Rating", value: "5.0 ★ (485+ Reviews)" },
+    { label: "Kalika Mata Temple", value: "4 Mins Walk" },
     { label: "City View Suite", value: "1,615 Sq. Ft." },
-    { label: "Rooftop Restaurant", value: "360° Skyline View" },
-    { label: "Railway Station", value: "5.7 Km Junction" },
+    { label: "Chittorgarh Fort", value: "1.1 Km" },
   ],
 };
 

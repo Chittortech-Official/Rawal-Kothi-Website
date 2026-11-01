@@ -93,11 +93,11 @@ export default function Navbar({ onOpenBooking }) {
             ))}
           </nav>
 
-          {/* Right Action: BOOK NOW Button & Mobile Hamburger */}
+          {/* Right Action: BOOK NOW Button (Desktop & Tablet only) & Mobile Hamburger */}
           <div className="flex items-center gap-2 sm:gap-3 shrink-0">
             <button
               onClick={onOpenBooking}
-              className="bg-[#B99470] hover:bg-[#9E7B58] text-white px-3.5 sm:px-6 py-2 sm:py-2.5 text-[11px] sm:text-xs font-sans tracking-[0.15em] sm:tracking-[0.18em] uppercase font-semibold transition-all duration-300 shadow-md hover:shadow-xl border border-[#B99470] hover:border-[#9E7B58] whitespace-nowrap"
+              className="hidden sm:inline-flex bg-[#B99470] hover:bg-[#9E7B58] text-white px-5 sm:px-6 py-2 sm:py-2.5 text-xs font-sans tracking-[0.18em] uppercase font-semibold transition-all duration-300 shadow-md hover:shadow-xl border border-[#B99470] hover:border-[#9E7B58] whitespace-nowrap"
             >
               BOOK NOW
             </button>
@@ -105,11 +105,10 @@ export default function Navbar({ onOpenBooking }) {
             {/* Mobile / Tablet Hamburger Toggle */}
             <button
               onClick={() => setMobileMenuOpen(true)}
-              className="lg:hidden p-1.5 sm:p-2 text-white hover:text-[#B99470] transition-colors focus:outline-none flex items-center gap-1.5 border border-white/20 hover:border-[#B99470] rounded"
+              className="lg:hidden p-2 text-white hover:text-[#B99470] transition-colors focus:outline-none flex items-center gap-1.5 border border-white/20 hover:border-[#B99470] rounded"
               aria-label="Open Navigation Menu"
             >
-              <Menu size={22} className="text-[#B99470]" />
-              <span className="hidden xs:inline text-[10px] uppercase tracking-widest text-white/90 font-medium">Menu</span>
+              <Menu size={24} className="text-[#B99470]" />
             </button>
           </div>
         </div>

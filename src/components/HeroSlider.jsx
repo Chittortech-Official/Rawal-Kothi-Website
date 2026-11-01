@@ -6,32 +6,32 @@ import { RoyalLotusCrest, JaliArrowLeft, JaliArrowRight, OrnateDivider } from '.
 
 const heroSlides = [
   {
-    image: 'https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3227/x_344,y_0,w_4312,h_3227,r_0,c_crop/q_80,w_1800,dpr_1,f_auto,fl_progressive,c_limit/kesar-bagh-palace-chittorgarh/MAIN_LOBBY_1_52f3d9ad',
-    title: 'RAWAL KOTHI',
-    subtitle: 'WELCOME TO',
-    tagline: 'HERITAGE PALACE & PANORAMIC ROOFTOP',
-    location: 'CHITTORGARH, RAJASTHAN',
-  },
-  {
     image: '/113504.jpg',
     title: 'RAWAL KOTHI',
     subtitle: 'WELCOME TO',
-    tagline: 'SUNSET ROOFTOP DINING WITH FORT VISTAS',
-    location: 'CHITTORGARH, RAJASTHAN',
+    tagline: 'PANORAMIC ROOFTOP DINING & PALACE STAYS',
+    location: 'CHITTORGARH FORT AREA',
   },
   {
     image: '/113503.jpg',
     title: 'RAWAL KOTHI',
     subtitle: 'WELCOME TO',
-    tagline: 'ROYAL LIVING WITH AUTHENTIC MEWAR CHARM',
-    location: 'CHITTORGARH, RAJASTHAN',
+    tagline: 'ROYAL HERITAGE LIVING WITH MEWAR CHARM',
+    location: 'CHITTORGARH FORT AREA',
   },
   {
-    image: '/113506.jpg',
+    image: '/113507.jpg',
     title: 'RAWAL KOTHI',
     subtitle: 'WELCOME TO',
-    tagline: 'STARLIT DINNERS ABOVE THE HISTORIC VALLEY',
-    location: 'CHITTORGARH, RAJASTHAN',
+    tagline: 'SUNLIT TERRACE SUITES & VALLEY VISTAS',
+    location: 'CHITTORGARH FORT AREA',
+  },
+  {
+    image: '/113505.jpg',
+    title: 'RAWAL KOTHI',
+    subtitle: 'WELCOME TO',
+    tagline: 'ORNATE WOODEN PERGOLA HIGH-TEA & LOUNGE',
+    location: 'CHITTORGARH FORT AREA',
   },
 ];
 
@@ -77,9 +77,8 @@ export default function HeroSlider({ onOpenBooking }) {
             />
           </div>
 
-          {/* Luxury Palace Vignette & Dark Gradient Scrim */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/65" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-black/25 to-black/75" />
+          {/* Crystal Clear Palace Scrim - Keeps photos bright and vibrant */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/20 to-black/40" />
         </div>
       ))}
 
