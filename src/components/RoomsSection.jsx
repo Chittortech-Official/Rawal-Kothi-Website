@@ -7,6 +7,18 @@ import { Maximize, Users, Bed, Bath, Wifi, Check, ChevronRight } from 'lucide-re
 
 const roomsData = [
   {
+    id: 'city-view-kothi',
+    name: 'City View Kothi Suite',
+    subtitle: 'Signature Fresco Haven with Expansive City Vistas',
+    size: '1,615 sq. ft. (150 sq. mt.)',
+    capacity: 'Up to 3 Guests',
+    bed: 'Royal Double Bed',
+    price: '₹6,698',
+    image: '/113503.jpg',
+    desc: 'Our premier signature offering: A grand 1,615 sq. ft. luxury sanctuary showcasing traditional hand-painted peacock frescoes on royal indigo walls, panoramic city vistas, crisp air conditioning, high-speed Wi-Fi, and personalized Mewari hospitality.',
+    amenities: ['1,615 Sq. Ft. Luxury Space', 'Authentic Peacock Wall Murals', 'Panoramic City View', 'Air Conditioning', 'Modern Ensuite Bathroom', 'Mineral Water & Refreshments'],
+  },
+  {
     id: 'padmini-suite',
     name: 'Padmini Royal Suite',
     subtitle: 'Your Highness Called. The Suite’s Ready.',

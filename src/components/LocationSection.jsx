@@ -26,11 +26,11 @@ const testimonials = [
 ];
 
 const landmarks = [
-  { name: 'Chittorgarh Fort (UNESCO Heritage)', dist: '3.5 km (10 mins drive)' },
-  { name: 'Vijay Stambha & Kirti Stambha', dist: '4.2 km (12 mins drive)' },
-  { name: 'Padmini Palace & Gaumukh Kund', dist: '4.5 km (15 mins drive)' },
+  { name: 'Chittorgarh Fort Access & Gateway', dist: '1.1 km (3 mins drive / walking ascent)' },
+  { name: 'Kalika Mata Temple & Padmini Palace', dist: '2.5 km (7 mins drive)' },
+  { name: 'Vijay Stambha & Gaumukh Reservoir', dist: '3.0 km (8 mins drive)' },
   { name: 'Chittorgarh Railway Junction', dist: '2.8 km (8 mins drive)' },
-  { name: 'Maharana Pratap Airport Udaipur (UDR)', dist: '90 km (Smooth highway drive)' },
+  { name: 'Maharana Pratap Airport Udaipur (UDR)', dist: '90 km (1.5 hrs via NH 27)' },
 ];
 
 export default function LocationSection() {
