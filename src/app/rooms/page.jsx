@@ -103,39 +103,39 @@ export default function RoomsPage() {
       <RoyalCursor />
       <Navbar onOpenBooking={handleOpenBooking} />
 
-      {/* Atmospheric Cinematic Banner with High-Res Suite Background */}
-      <section className="relative pt-40 pb-28 sm:pt-48 sm:pb-36 bg-[#1A1615] text-white overflow-hidden text-center">
+      {/* Atmospheric Cinematic Banner with High-Res Suite Background - Clean Dark Vignette, No White Fog */}
+      <section className="relative pt-36 pb-24 sm:pt-44 sm:pb-28 bg-[#1A1615] text-white overflow-hidden text-center border-b-2 border-[#B99470]">
         <div className="absolute inset-0">
           <Image
             src="/chetak-suite.jpg"
             alt="Rawal Kothi Royal Fresco Suite"
             fill
             priority
-            className="object-cover opacity-25 scale-105 transition-transform duration-1000"
+            className="object-cover opacity-35 scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1A1615] via-black/60 to-black/85" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/60 to-[#1A1615]" />
           <div className="absolute inset-0 bg-jali-pattern opacity-10 pointer-events-none" />
         </div>
 
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6">
-          <RoyalLotusCrest className="w-14 h-14 text-[#B99470] mx-auto mb-3 animate-pulse" />
-          <nav className="text-[10px] sm:text-[11px] uppercase tracking-[0.3em] text-[#B99470] font-sans mb-3 flex items-center justify-center gap-2">
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6">
+          <RoyalLotusCrest className="w-12 h-12 text-[#B99470] mx-auto mb-3" />
+          <nav className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-[#B99470] font-sans mb-3 flex items-center justify-center gap-2 font-medium">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <span>•</span>
             <span className="text-white">Royal Accommodations</span>
           </nav>
-          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl text-white font-normal leading-tight mb-4 tracking-wide">
+          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl text-white font-normal leading-tight mb-3 tracking-wide">
             Sanctuaries of Imperial Mewar
           </h1>
-          <OrnateDivider color="#B99470" className="my-3" />
-          <p className="text-gray-300 font-sans text-sm sm:text-base max-w-2xl mx-auto leading-relaxed font-light">
+          <OrnateDivider color="#B99470" className="my-2.5" />
+          <p className="text-gray-200 font-sans text-xs sm:text-sm md:text-base max-w-2xl mx-auto leading-relaxed font-light">
             Each suite at Rawal Kothi is a masterwork of architectural devotion—hand-painted peacock frescoes, four-poster canopy beds, private jacuzzi sanctuaries, and expansive views over historic Chittorgarh Fort.
           </p>
 
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+          <div className="mt-7 flex flex-wrap items-center justify-center gap-4">
             <button
               onClick={handleOpenBooking}
-              className="bg-[#B99470] hover:bg-[#9E7B58] text-white px-8 py-3.5 text-xs uppercase tracking-[0.2em] font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
+              className="bg-[#B99470] hover:bg-[#9E7B58] text-white px-8 py-3 text-xs uppercase tracking-[0.18em] font-semibold transition-all shadow-lg hover:scale-105"
             >
               Check Availability & Rates
             </button>
@@ -143,7 +143,7 @@ export default function RoomsPage() {
               href="https://wa.me/918058877878?text=Hello%20Rawal%20Kothi,%20I%20would%20like%20to%20inquire%20about%20suite%20availability."
               target="_blank"
               rel="noreferrer"
-              className="bg-transparent hover:bg-white/10 text-white border border-[#B99470]/50 hover:border-[#B99470] px-6 py-3.5 text-xs uppercase tracking-[0.16em] transition-colors"
+              className="bg-transparent hover:bg-white/10 text-white border border-[#B99470]/60 hover:border-[#B99470] px-6 py-3 text-xs uppercase tracking-[0.16em] transition-colors"
             >
               WhatsApp Concierge
             </a>
