@@ -105,21 +105,6 @@ export default function HeroSlider({ onOpenBooking }) {
             HOTEL & ROOFTOP RETREAT • CHITTORGARH FORT
           </p>
 
-          {/* Justdial & Goibibo Trust Signals Pill */}
-          <div className="flex items-center flex-wrap justify-center gap-2 sm:gap-3 my-1.5 sm:my-2 bg-black/40 backdrop-blur-md px-3 sm:px-4 py-1.5 rounded-full border border-[#B99470]/40">
-            <span className="flex items-center gap-1 text-[#F5B838] text-[11px] sm:text-xs font-semibold">
-              ★ 5.0 Rating
-            </span>
-            <span className="text-white/40 text-[10px]">•</span>
-            <span className="text-white/90 text-[10px] sm:text-[11px] font-sans">
-              485+ Verified Reviews
-            </span>
-            <span className="text-white/40 text-[10px]">•</span>
-            <span className="text-[#B99470] text-[10px] sm:text-[11px] font-medium">
-              4 Mins Walk to Kalika Mata Temple
-            </span>
-          </div>
-
           {/* Ornate Divider Flourish */}
           <OrnateDivider color="#B99470" className="my-2.5 sm:my-5 max-w-[200px] sm:max-w-xs" />
 
