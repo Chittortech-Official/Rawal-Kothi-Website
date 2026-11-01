@@ -86,11 +86,6 @@ export default function AboutSection({ onOpenBooking }) {
                 </h4>
               </div>
             </div>
-            {/* Decorative Gold Floating Badge with Parallax Offset */}
-            <div className="hidden sm:block absolute -bottom-6 -right-6 bg-[#1A1615] text-white p-5 shadow-2xl border border-[#B99470]/40 max-w-[200px]" data-parallax-speed="0.12">
-              <span className="text-2xl sm:text-3xl font-serif text-[#B99470] block font-bold">100%</span>
-              <span className="text-[11px] uppercase tracking-wider text-gray-300">Authentic Mewari Palace Experience</span>
-            </div>
           </div>
 
           {/* Right: Rich Narrative */}
