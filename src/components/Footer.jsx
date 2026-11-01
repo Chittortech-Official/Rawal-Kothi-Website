@@ -111,7 +111,19 @@ export default function Footer() {
 
         {/* Bottom Bar: Copyright & Back To Top */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-4">
-          <p>© {new Date().getFullYear()} Rawal Kothi, Chittorgarh. All Rights Reserved. Crafted with royal elegance.</p>
+          <p className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5 text-center sm:text-left">
+            <span>© {new Date().getFullYear()} Rawal Kothi, Chittorgarh. All Rights Reserved.</span>
+            <span className="hidden sm:inline">•</span>
+            <span>Crafted with elegance by</span>
+            <a
+              href="https://chittortech.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#B99470] hover:text-[#D4B999] hover:underline font-semibold transition-colors"
+            >
+              ChittorTech
+            </a>
+          </p>
 
           <div className="flex items-center gap-4">
             <a
