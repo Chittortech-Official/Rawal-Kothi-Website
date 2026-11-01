@@ -34,14 +34,14 @@ export default function Navbar({ onOpenBooking }) {
   }, [mobileMenuOpen]);
 
   const navLinks = [
-    { name: 'Home', href: '#', icon: null },
-    { name: 'Rooms', href: '#rooms', icon: Bed },
-    { name: 'Rooftop Dining', href: '#dining', icon: Utensils },
-    { name: 'Heritage', href: '#about', icon: Sparkles },
-    { name: 'Gallery', href: '#gallery', icon: ImageIcon },
-    { name: 'Location', href: '#location', icon: MapPin },
-    { name: 'Offers', href: '#offers', icon: null },
-    { name: 'Contact', href: '#contact', icon: Phone },
+    { name: 'Home', href: '/', icon: null },
+    { name: 'Rooms', href: '/rooms', icon: Bed },
+    { name: 'Rooftop Dining', href: '/rooftop-dining', icon: Utensils },
+    { name: 'Heritage', href: '/heritage', icon: Sparkles },
+    { name: 'Gallery', href: '/gallery', icon: ImageIcon },
+    { name: 'Location', href: '/location', icon: MapPin },
+    { name: 'Offers', href: '/offers', icon: null },
+    { name: 'Contact', href: '/contact', icon: Phone },
   ];
 
   return (
@@ -55,7 +55,7 @@ export default function Navbar({ onOpenBooking }) {
       >
         <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Brand Logo & Royal Crest */}
-          <Link href="#" className="flex items-center gap-2 sm:gap-3 group shrink-0">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3 group shrink-0">
             <RoyalLotusCrest className="w-8 h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 text-[#B99470] group-hover:scale-105 transition-transform" />
             <div className="flex flex-col">
               <span className="font-serif text-base sm:text-xl md:text-2xl text-white tracking-[0.16em] sm:tracking-[0.18em] uppercase font-normal leading-tight">
@@ -70,26 +70,26 @@ export default function Navbar({ onOpenBooking }) {
           {/* Desktop Nav Links - Fully Responsive on Laptops (1024px to 1920px) */}
           <nav className="hidden xl:flex items-center space-x-5 2xl:space-x-7">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
                 href={link.href}
                 className="whitespace-nowrap text-xs 2xl:text-[13px] uppercase font-sans tracking-[0.12em] text-white/90 hover:text-[#B99470] transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#B99470] hover:after:w-full after:transition-all"
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </nav>
 
           {/* Laptop View Links (1024px to 1279px) - Key Essential Links with no line breaks */}
           <nav className="hidden lg:flex xl:hidden items-center space-x-3.5">
             {navLinks.slice(0, 6).map((link) => (
-              <a
+              <Link
                 key={link.name}
                 href={link.href}
                 className="whitespace-nowrap text-[11px] uppercase font-sans tracking-[0.1em] text-white/90 hover:text-[#B99470] transition-colors"
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -162,7 +162,7 @@ export default function Navbar({ onOpenBooking }) {
               {navLinks.map((link) => {
                 const IconComponent = link.icon;
                 return (
-                  <a
+                  <Link
                     key={link.name}
                     href={link.href}
                     onClick={() => setMobileMenuOpen(false)}
@@ -173,7 +173,7 @@ export default function Navbar({ onOpenBooking }) {
                       <span className="font-medium">{link.name}</span>
                     </div>
                     <ChevronRight size={16} className="text-[#B99470]/60 group-hover:translate-x-1 transition-transform" />
-                  </a>
+                  </Link>
                 );
               })}
             </nav>

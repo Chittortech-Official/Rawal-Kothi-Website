@@ -60,12 +60,12 @@ export default function Footer() {
               Suites & Rooftop Dining
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-sm text-gray-300 font-sans">
-              <li><a href="#rooms" className="hover:text-[#B99470] transition-colors">City View Kothi Suite (1,615 Sq. Ft.)</a></li>
-              <li><a href="#rooms" className="hover:text-[#B99470] transition-colors">Padmini Royal Suite</a></li>
-              <li><a href="#rooms" className="hover:text-[#B99470] transition-colors">Chetak Heritage Suite</a></li>
-              <li><a href="#rooms" className="hover:text-[#B99470] transition-colors">Meera Palace Suite</a></li>
-              <li><a href="#dining" className="hover:text-[#B99470] transition-colors">Skyline Rooftop Restaurant</a></li>
-              <li><a href="#dining" className="hover:text-[#B99470] transition-colors">Sunset Gazebo Cafe & Platters</a></li>
+              <li><Link href="/rooms" className="hover:text-[#B99470] transition-colors">City View Kothi Suite (1,615 Sq. Ft.)</Link></li>
+              <li><Link href="/rooms" className="hover:text-[#B99470] transition-colors">Padmini Royal Suite</Link></li>
+              <li><Link href="/rooms" className="hover:text-[#B99470] transition-colors">Chetak Heritage Suite</Link></li>
+              <li><Link href="/rooms" className="hover:text-[#B99470] transition-colors">Meera Palace Suite</Link></li>
+              <li><Link href="/rooftop-dining" className="hover:text-[#B99470] transition-colors">Skyline Rooftop Restaurant</Link></li>
+              <li><Link href="/rooftop-dining" className="hover:text-[#B99470] transition-colors">Sunset Gazebo Cafe & Platters</Link></li>
             </ul>
           </div>
 
@@ -75,12 +75,12 @@ export default function Footer() {
               Explore Rawal Kothi
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-sm text-gray-300 font-sans">
-              <li><a href="#about" className="hover:text-[#B99470] transition-colors">About Our Heritage</a></li>
-              <li><a href="#facilities" className="hover:text-[#B99470] transition-colors">Palace Amenities</a></li>
-              <li><a href="#gallery" className="hover:text-[#B99470] transition-colors">Visual Photo Gallery</a></li>
-              <li><a href="#offers" className="hover:text-[#B99470] transition-colors">Special Stay Packages</a></li>
-              <li><a href="#location" className="hover:text-[#B99470] transition-colors">Location & Proximity</a></li>
-              <li><a href="#faqs" className="hover:text-[#B99470] transition-colors">Guest FAQs & Policies</a></li>
+              <li><Link href="/heritage" className="hover:text-[#B99470] transition-colors">About Our Heritage</Link></li>
+              <li><Link href="/heritage" className="hover:text-[#B99470] transition-colors">Palace Amenities</Link></li>
+              <li><Link href="/gallery" className="hover:text-[#B99470] transition-colors">Visual Photo Gallery</Link></li>
+              <li><Link href="/offers" className="hover:text-[#B99470] transition-colors">Special Stay Packages</Link></li>
+              <li><Link href="/location" className="hover:text-[#B99470] transition-colors">Location & Proximity</Link></li>
+              <li><Link href="/contact" className="hover:text-[#B99470] transition-colors">Royal Contact & Desk</Link></li>
               <li><a href="https://maps.google.com/?q=Chittorgarh+Rajasthan" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 text-[#B99470] hover:underline font-medium pt-1">Directions & Google Map →</a></li>
             </ul>
           </div>
