@@ -10,7 +10,7 @@ export default function FloatingWidgets() {
       <div className="fixed right-3.5 sm:right-6 bottom-6 sm:bottom-8 z-40 flex flex-col gap-2.5 sm:gap-3">
         {/* WhatsApp Floating Circle Button */}
         <a
-          href="https://wa.me/918690142444?text=Hello%20Rawal%20Kothi,%20I%20would%20like%20to%20inquire%20about%20room%20booking%20and%20rooftop%20dining."
+          href="https://wa.me/918058877878?text=Hello%20Rawal%20Kothi,%20I%20would%20like%20to%20inquire%20about%20room%20booking%20and%20rooftop%20dining."
           target="_blank"
           rel="noreferrer"
           aria-label="Chat on WhatsApp"
@@ -24,7 +24,7 @@ export default function FloatingWidgets() {
 
         {/* Phone Floating Circle Button */}
         <a
-          href="tel:+918690142444"
+          href="tel:+918058877878"
           aria-label="Call Rawal Kothi"
           className="w-12 h-12 sm:w-13 sm:h-13 bg-[#B99470] hover:bg-[#9E7B58] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 group relative border-2 border-white/90"
         >

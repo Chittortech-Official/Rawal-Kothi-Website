@@ -151,7 +151,7 @@ export default function RooftopDiningSection({ onOpenBooking }) {
 
             <div className="space-y-3 pt-2">
               <a
-                href="https://wa.me/918690142444?text=Hello%20Rawal%20Kothi,%20I%20would%20like%20to%20reserve%20a%20table%20at%20the%20Rooftop%20Restaurant."
+                href="https://wa.me/918058877878?text=Hello%20Rawal%20Kothi,%20I%20would%20like%20to%20reserve%20a%20table%20at%20the%20Rooftop%20Restaurant."
                 target="_blank"
                 rel="noreferrer"
                 className="w-full bg-[#B99470] hover:bg-[#9E7B58] text-[#1A1615] hover:text-white py-3.5 px-4 text-center text-xs uppercase tracking-[0.2em] font-semibold block transition-colors shadow-lg"
@@ -159,7 +159,7 @@ export default function RooftopDiningSection({ onOpenBooking }) {
                 Reserve Rooftop Table
               </a>
               <a
-                href="tel:+918690142444"
+                href="tel:+918058877878"
                 className="w-full bg-transparent hover:bg-white/10 text-white border border-white/30 py-3 px-4 text-center text-xs uppercase tracking-[0.16em] flex items-center justify-center gap-2 transition-colors"
               >
                 <Phone size={14} className="text-[#B99470]" /> Call Table Concierge

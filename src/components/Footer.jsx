@@ -37,15 +37,15 @@ export default function Footer() {
             <div className="space-y-3 text-xs sm:text-sm text-gray-300 font-sans leading-relaxed">
               <p className="flex items-start gap-2.5">
                 <MapPin size={16} className="text-[#B99470] flex-shrink-0 mt-1" />
-                <span>Hotel Rawal Kothi Fort, Near Maharana Medicor Sansthan, Kidwai Nagar, Chittorgarh - 312001, Rajasthan</span>
+                <span>Hotel Rawal Kothi Fort, Chittorgarh Fort Road, Near Bhandar Ke Ganesh Ji, Kidwai Nagar, Chittorgarh - 312001, Rajasthan</span>
               </p>
               <p className="flex items-center gap-2.5 pt-1">
                 <Phone size={15} className="text-[#B99470] flex-shrink-0" />
-                <a href="tel:+918690142444" className="hover:text-[#B99470] transition-colors">+91 86 9014 2444</a>
+                <a href="tel:+918058877878" className="hover:text-[#B99470] transition-colors font-medium">+91 80588 77878</a>
               </p>
               <p className="flex items-center gap-2.5">
                 <Phone size={15} className="text-[#B99470] flex-shrink-0" />
-                <a href="tel:+919145858110" className="hover:text-[#B99470] transition-colors">+91 91 4585 8110</a>
+                <a href="tel:+918690142444" className="hover:text-[#B99470] transition-colors">+91 86 9014 2444</a>
               </p>
               <p className="flex items-center gap-2.5">
                 <Mail size={15} className="text-[#B99470] flex-shrink-0" />
@@ -104,7 +104,7 @@ export default function Footer() {
 
           <div className="flex items-center gap-4">
             <a
-              href="https://wa.me/918690142444"
+              href="https://wa.me/918058877878"
               target="_blank"
               rel="noreferrer"
               className="w-8 h-8 rounded-full bg-white/5 hover:bg-[#B99470] hover:text-[#1A1615] flex items-center justify-center transition-colors"
@@ -113,7 +113,7 @@ export default function Footer() {
               <MessageCircle size={15} />
             </a>
             <a
-              href="tel:+918690142444"
+              href="tel:+918058877878"
               className="w-8 h-8 rounded-full bg-white/5 hover:bg-[#B99470] hover:text-[#1A1615] flex items-center justify-center transition-colors"
               aria-label="Phone"
             >

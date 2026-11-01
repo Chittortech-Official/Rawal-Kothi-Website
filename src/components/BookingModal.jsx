@@ -9,7 +9,7 @@ export default function BookingModal({ isOpen, onClose, initialData }) {
     name: '',
     phone: '',
     email: '',
-    room: 'Padmini Royal Suite (₹7,999/night)',
+    room: 'City View Kothi Suite (₹6,698/night)',
     checkIn: '',
     checkOut: '',
     guests: '2 Adults',
@@ -38,7 +38,7 @@ export default function BookingModal({ isOpen, onClose, initialData }) {
   const handleWhatsAppBooking = (e) => {
     e.preventDefault();
     const msg = `*New Reservation Request - Rawal Kothi Chittorgarh*%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone}%0A*Email:* ${formData.email}%0A*Room:* ${formData.room}%0A*Check-In:* ${formData.checkIn}%0A*Check-Out:* ${formData.checkOut}%0A*Guests:* ${formData.guests}%0A*Special Request:* ${formData.specialRequest || 'None'}`;
-    window.open(`https://wa.me/918690142444?text=${msg}`, '_blank');
+    window.open(`https://wa.me/918058877878?text=${msg}`, '_blank');
     setSubmitted(true);
   };
 
