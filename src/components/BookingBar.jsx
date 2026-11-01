@@ -24,23 +24,6 @@ export default function BookingBar({ onCheckAvailability }) {
   return (
     <div className="relative z-30 -mt-6 sm:-mt-10 md:-mt-12 max-w-6xl mx-auto px-3 sm:px-6">
       <div className="bg-[#FAF7F2]/95 backdrop-blur-md rounded-lg shadow-2xl border border-[#B99470]/40 p-4 sm:p-6 lg:p-7">
-        {/* Justdial & Goibibo Verified Ratings Trust Ribbon */}
-        <div className="mb-3.5 pb-2.5 border-b border-[#B99470]/20 flex flex-wrap items-center justify-between gap-2 text-xs">
-          <div className="flex items-center flex-wrap gap-2">
-            <span className="flex items-center gap-1 bg-[#2C2725] text-[#F5B838] px-2.5 py-0.5 rounded-full text-xs font-semibold">
-              ★ 5.0 Rating
-            </span>
-            <span className="text-[#1A1615] font-semibold text-xs sm:text-sm">
-              485+ Verified Guest Reviews
-            </span>
-            <span className="text-gray-300 hidden sm:inline">•</span>
-            <span className="text-[#5B5E63] text-xs hidden sm:inline">Justdial & Goibibo Verified</span>
-          </div>
-          <span className="text-[#9E7B58] text-xs font-medium flex items-center gap-1">
-            📍 4 Mins Walk to Kalika Mata Temple, Fort Village
-          </span>
-        </div>
-
         <form onSubmit={handleSubmit} className="grid grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4 items-end">
           {/* Check-In */}
           <div className="flex flex-col col-span-1">

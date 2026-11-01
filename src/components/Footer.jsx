@@ -39,11 +39,6 @@ export default function Footer() {
                 <MapPin size={16} className="text-[#B99470] flex-shrink-0 mt-1" />
                 <span>Hotel Rawal Kothi Fort, Near Maharana Medicor Sansthan, Kidwai Nagar, Chittorgarh - 312001, Rajasthan</span>
               </p>
-              <div className="p-3 bg-white/5 border border-[#B99470]/30 rounded text-xs space-y-1">
-                <p className="text-[#B99470] font-semibold">★ 5.0 Rating (485+ Reviews)</p>
-                <p className="text-gray-300">• 4 Minutes Walk to Kalika Mata Temple</p>
-                <p className="text-gray-300">• 1.1 Km to Chittorgarh Fort Entrance</p>
-              </div>
               <p className="flex items-center gap-2.5 pt-1">
                 <Phone size={15} className="text-[#B99470] flex-shrink-0" />
                 <a href="tel:+918690142444" className="hover:text-[#B99470] transition-colors">+91 86 9014 2444</a>
