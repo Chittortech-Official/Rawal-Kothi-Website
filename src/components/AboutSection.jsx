@@ -32,15 +32,19 @@ export default function AboutSection({ onOpenBooking }) {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto">
-          <p className="text-[#B99470] tracking-[0.3em] text-xs sm:text-sm uppercase font-sans font-semibold mb-2">
-            A MAJESTIC RETREAT IN THE LAND OF LEGENDS
-          </p>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#B99470]/10 border border-[#B99470]/30 text-[#B99470] text-xs font-semibold uppercase tracking-wider mb-3">
+            <span className="text-[#D99A26]">★ 5.0 Rated</span>
+            <span>•</span>
+            <span>485+ Verified Reviews</span>
+            <span>•</span>
+            <span className="text-[#1A1615]">Chittorgarh Fort Village</span>
+          </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#1A1615] font-normal leading-tight">
-            Rawal Kothi: Chittorgarh’s Ode to Regal Living
+            Hotel Rawal Kothi Fort: Ode to Regal Living
           </h2>
           <OrnateDivider />
           <p className="mt-4 text-[#5B5E63] font-sans text-sm sm:text-base leading-relaxed">
-            A true heritage retreat in Chittorgarh, this palace haven welcomes you into a timeless world of royal Rajasthani grandeur. Built with hand-painted floral pillars, stained-glass motifs, ornate jharokhas, and our crowning starlit rooftop lounge, Rawal Kothi unites time-honoured Rajput hospitality with contemporary comfort.
+            Perched inside the historic <strong className="text-[#1A1615] font-semibold">Chittorgarh Fort Village</strong> and just a <strong className="text-[#1A1615] font-semibold">4-minute walk to Kalika Mata Temple</strong>, Hotel Rawal Kothi Fort welcomes you into an authentic world of Mewari heritage. Featuring 1,615 sq. ft. peacock fresco suites, hand-painted floral pillars, and our celebrated cliffside rooftop restaurant overlooking the sparkling city valley.
           </p>
         </div>
 

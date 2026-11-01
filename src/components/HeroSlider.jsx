@@ -103,13 +103,23 @@ export default function HeroSlider({ onOpenBooking }) {
 
           {/* Tagline / Subtitle */}
           <p className="font-serif tracking-[0.16em] sm:tracking-[0.25em] text-xs sm:text-base md:text-lg lg:text-xl text-white/95 uppercase font-normal mt-0.5 sm:mt-1 mb-1 sm:mb-2 max-w-xl px-2">
-            PALACE & ROOFTOP RETREAT
+            HOTEL & ROOFTOP RETREAT • CHITTORGARH FORT
           </p>
 
-          {/* Location */}
-          <p className="text-[#B99470] tracking-[0.28em] sm:tracking-[0.4em] text-[10px] sm:text-xs md:text-sm uppercase font-sans font-medium mt-0.5 sm:mt-1">
-            CHITTORGARH FORT AREA
-          </p>
+          {/* Justdial & Goibibo Trust Signals Pill */}
+          <div className="flex items-center flex-wrap justify-center gap-2 sm:gap-3 my-1.5 sm:my-2 bg-black/40 backdrop-blur-md px-3 sm:px-4 py-1.5 rounded-full border border-[#B99470]/40">
+            <span className="flex items-center gap-1 text-[#F5B838] text-[11px] sm:text-xs font-semibold">
+              ★ 5.0 Rating
+            </span>
+            <span className="text-white/40 text-[10px]">•</span>
+            <span className="text-white/90 text-[10px] sm:text-[11px] font-sans">
+              485+ Verified Reviews
+            </span>
+            <span className="text-white/40 text-[10px]">•</span>
+            <span className="text-[#B99470] text-[10px] sm:text-[11px] font-medium">
+              4 Mins Walk to Kalika Mata Temple
+            </span>
+          </div>
 
           {/* Ornate Divider Flourish */}
           <OrnateDivider color="#B99470" className="my-2.5 sm:my-5 max-w-[200px] sm:max-w-xs" />

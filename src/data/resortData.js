@@ -22,7 +22,7 @@ export const resortInfo = {
 export const heroSlides = [
   {
     title: "Rawal Kothi Palace",
-    subtitle: "Chittorgarh’s Ode to Regal Living",
+    us  subtitle: "Chittorgarh’s Ode to Regal Living",
     description: "Immerse yourself in authentic Mewari royalty, hand-painted frescoes, and opulent palace suites.",
     image: "https://assets.simplotel.com/simplotel/image/upload/x_323,y_0,w_3450,h_2732,r_0,c_crop/q_80,w_1600,dpr_1,f_auto,fl_progressive,c_limit/kesar-bagh-palace-chittorgarh/facade-1",
     tag: "THE ROYAL RETREAT",
