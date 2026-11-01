@@ -104,7 +104,7 @@ export default function RooftopDiningSection({ onOpenBooking }) {
         </div>
 
         {/* Big Rooftop Feature Display */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-black/40 border border-[#B99470]/30 p-6 sm:p-8 rounded-none">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-black/40 border border-[#B99470]/30 p-6 sm:p-8 rounded-none reveal-element">
           {/* Main Visual */}
           <div className="lg:col-span-8 relative aspect-[16/10] overflow-hidden border border-white/10 shadow-2xl">
             <Image
@@ -150,14 +150,13 @@ export default function RooftopDiningSection({ onOpenBooking }) {
             </div>
 
             <div className="space-y-3 pt-2">
-              <a
-                href="https://wa.me/918058877878?text=Hello%20Rawal%20Kothi,%20I%20would%20like%20to%20reserve%20a%20table%20at%20the%20Rooftop%20Restaurant."
-                target="_blank"
-                rel="noreferrer"
+              <button
+                type="button"
+                onClick={() => onOpenBooking && onOpenBooking({ bookingType: 'table' })}
                 className="w-full bg-[#B99470] hover:bg-[#9E7B58] text-[#1A1615] hover:text-white py-3.5 px-4 text-center text-xs uppercase tracking-[0.2em] font-semibold block transition-colors shadow-lg"
               >
                 Reserve Rooftop Table
-              </a>
+              </button>
               <a
                 href="tel:+918058877878"
                 className="w-full bg-transparent hover:bg-white/10 text-white border border-white/30 py-3 px-4 text-center text-xs uppercase tracking-[0.16em] flex items-center justify-center gap-2 transition-colors"
@@ -183,7 +182,7 @@ export default function RooftopDiningSection({ onOpenBooking }) {
             {foodShowcase.map((item, idx) => (
               <div
                 key={idx}
-                className="group bg-black/40 border border-[#B99470]/30 overflow-hidden hover:border-[#B99470] transition-all duration-300 flex flex-col justify-between"
+                className={`group bg-black/40 border border-[#B99470]/30 overflow-hidden hover:border-[#B99470] transition-all duration-300 flex flex-col justify-between reveal-element reveal-delay-${idx + 1}`}
               >
                 <div>
                   <div className="relative aspect-square overflow-hidden">

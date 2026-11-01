@@ -34,7 +34,7 @@ const galleryItems = [
   {
     category: 'suites',
     title: 'City View Kothi Peacock Fresco Suite',
-    image: '/city-view-kothi-room.jpg',
+    image: '/chetak-suite.jpg',
   },
   {
     category: 'suites',

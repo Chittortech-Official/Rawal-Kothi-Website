@@ -22,49 +22,49 @@ export default function BookingBar({ onCheckAvailability }) {
   };
 
   return (
-    <div className="relative z-30 -mt-6 sm:-mt-10 md:-mt-12 max-w-6xl mx-auto px-3 sm:px-6">
+    <div className="relative z-30 mt-2 sm:-mt-10 md:-mt-12 max-w-6xl mx-auto px-3 sm:px-6">
       <div className="bg-[#FAF7F2]/95 backdrop-blur-md rounded-lg shadow-2xl border border-[#B99470]/40 p-4 sm:p-6 lg:p-7">
         <form onSubmit={handleSubmit} className="grid grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4 items-end">
           {/* Check-In */}
-          <div className="flex flex-col col-span-1">
-            <label className="text-[10px] sm:text-[11px] uppercase tracking-[0.14em] text-[#5B5E63] font-semibold mb-1 flex items-center gap-1">
-              <Calendar size={12} className="text-[#B99470]" />
+          <div className="flex flex-col col-span-1 min-w-0">
+            <label className="text-[10px] sm:text-[11px] uppercase tracking-[0.14em] text-[#5B5E63] font-semibold mb-1 flex items-center gap-1 truncate">
+              <Calendar size={12} className="text-[#B99470] shrink-0" />
               Check-In
             </label>
             <input
               type="date"
               value={checkIn}
               onChange={(e) => setCheckIn(e.target.value)}
-              className="bg-transparent border-b border-[#2C2725]/40 focus:border-[#B99470] py-1.5 sm:py-2 text-xs sm:text-sm text-[#1A1615] font-medium outline-none transition-colors w-full"
+              className="bg-transparent border-b border-[#2C2725]/40 focus:border-[#B99470] py-1.5 sm:py-2 text-[11px] sm:text-sm text-[#1A1615] font-medium outline-none transition-colors w-full min-w-0"
               required
             />
           </div>
 
           {/* Check-Out */}
-          <div className="flex flex-col col-span-1">
-            <label className="text-[10px] sm:text-[11px] uppercase tracking-[0.14em] text-[#5B5E63] font-semibold mb-1 flex items-center gap-1">
-              <Calendar size={12} className="text-[#B99470]" />
+          <div className="flex flex-col col-span-1 min-w-0">
+            <label className="text-[10px] sm:text-[11px] uppercase tracking-[0.14em] text-[#5B5E63] font-semibold mb-1 flex items-center gap-1 truncate">
+              <Calendar size={12} className="text-[#B99470] shrink-0" />
               Check-Out
             </label>
             <input
               type="date"
               value={checkOut}
               onChange={(e) => setCheckOut(e.target.value)}
-              className="bg-transparent border-b border-[#2C2725]/40 focus:border-[#B99470] py-1.5 sm:py-2 text-xs sm:text-sm text-[#1A1615] font-medium outline-none transition-colors w-full"
+              className="bg-transparent border-b border-[#2C2725]/40 focus:border-[#B99470] py-1.5 sm:py-2 text-[11px] sm:text-sm text-[#1A1615] font-medium outline-none transition-colors w-full min-w-0"
               required
             />
           </div>
 
           {/* Guests */}
-          <div className="flex flex-col col-span-2 sm:col-span-1">
-            <label className="text-[10px] sm:text-[11px] uppercase tracking-[0.14em] text-[#5B5E63] font-semibold mb-1 flex items-center gap-1">
-              <Users size={12} className="text-[#B99470]" />
+          <div className="flex flex-col col-span-2 sm:col-span-1 min-w-0">
+            <label className="text-[10px] sm:text-[11px] uppercase tracking-[0.14em] text-[#5B5E63] font-semibold mb-1 flex items-center gap-1 truncate">
+              <Users size={12} className="text-[#B99470] shrink-0" />
               Guests & Rooms
             </label>
             <select
               value={guests}
               onChange={(e) => setGuests(e.target.value)}
-              className="bg-transparent border-b border-[#2C2725]/40 focus:border-[#B99470] py-1.5 sm:py-2 text-xs sm:text-sm text-[#1A1615] font-medium outline-none transition-colors cursor-pointer w-full"
+              className="bg-transparent border-b border-[#2C2725]/40 focus:border-[#B99470] py-1.5 sm:py-2 text-xs sm:text-sm text-[#1A1615] font-medium outline-none transition-colors cursor-pointer w-full min-w-0"
             >
               <option value="1 Adult, 1 Room">1 Adult, 1 Room</option>
               <option value="2 Adults, 1 Room">2 Adults, 1 Room</option>
@@ -75,9 +75,9 @@ export default function BookingBar({ onCheckAvailability }) {
           </div>
 
           {/* Promo Code */}
-          <div className="flex flex-col col-span-2 sm:col-span-1">
-            <label className="text-[10px] sm:text-[11px] uppercase tracking-[0.14em] text-[#5B5E63] font-semibold mb-1 flex items-center gap-1">
-              <Tag size={12} className="text-[#B99470]" />
+          <div className="flex flex-col col-span-2 sm:col-span-1 min-w-0">
+            <label className="text-[10px] sm:text-[11px] uppercase tracking-[0.14em] text-[#5B5E63] font-semibold mb-1 flex items-center gap-1 truncate">
+              <Tag size={12} className="text-[#B99470] shrink-0" />
               Promo Code
             </label>
             <input
@@ -85,7 +85,7 @@ export default function BookingBar({ onCheckAvailability }) {
               placeholder="OPTIONAL"
               value={promoCode}
               onChange={(e) => setPromoCode(e.target.value)}
-              className="bg-transparent border-b border-[#2C2725]/40 focus:border-[#B99470] py-1.5 sm:py-2 text-xs sm:text-sm text-[#1A1615] placeholder-gray-400 font-medium outline-none transition-colors uppercase w-full"
+              className="bg-transparent border-b border-[#2C2725]/40 focus:border-[#B99470] py-1.5 sm:py-2 text-xs sm:text-sm text-[#1A1615] placeholder-gray-400 font-medium outline-none transition-colors uppercase w-full min-w-0"
             />
           </div>
 

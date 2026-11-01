@@ -15,6 +15,8 @@ import FaqSection from '../components/FaqSection';
 import Footer from '../components/Footer';
 import FloatingWidgets from '../components/FloatingWidgets';
 import BookingModal from '../components/BookingModal';
+import RoyalCursor from '../components/RoyalCursor';
+import ScrollParallax from '../components/ScrollParallax';
 
 export default function Home() {
   const [bookingModalOpen, setBookingModalOpen] = useState(false);
@@ -37,6 +39,12 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-[#FDFBF7] selection:bg-[#B99470] selection:text-white w-full max-w-full overflow-x-hidden">
+      {/* Luxury Magnetic Golden Cursor for Desktop */}
+      <RoyalCursor />
+
+      {/* Cinematic Scroll Parallax & 3D Depth Engine */}
+      <ScrollParallax />
+
       {/* Fixed Luxury Palace Navbar */}
       <Navbar onOpenBooking={handleOpenBooking} />
 

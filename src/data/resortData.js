@@ -67,9 +67,9 @@ export const roomsData = [
     bedType: "Royal Heritage Double Bed",
     view: "Chittorgarh Fort & City View",
     priceStarting: "₹ 6,698",
-    image: "/city-view-kothi-room.jpg",
+    image: "/chetak-suite.jpg",
     gallery: [
-      "/city-view-kothi-room.jpg",
+      "/chetak-suite.jpg",
       "/113504.jpg",
       "/113503.jpg"
     ],
@@ -98,7 +98,7 @@ export const roomsData = [
     image: "/chetak-suite.jpg",
     gallery: [
       "/chetak-suite.jpg",
-      "/city-view-kothi-room.jpg",
+      "/113505.jpg",
       "/113504.jpg"
     ],
     features: [
@@ -127,7 +127,7 @@ export const roomsData = [
     image: "/padmini-suite.jpg",
     gallery: [
       "/padmini-suite.jpg",
-      "/city-view-kothi-room.jpg",
+      "/113503.jpg",
       "/113506.jpg"
     ],
     features: [
@@ -156,7 +156,7 @@ export const roomsData = [
     image: "/meera-suite.jpg",
     gallery: [
       "/meera-suite.jpg",
-      "/city-view-kothi-room.jpg",
+      "/113505.jpg",
       "/113507.jpg"
     ],
     features: [
@@ -185,7 +185,7 @@ export const roomsData = [
     image: "/rawal-premiere.jpg",
     gallery: [
       "/rawal-premiere.jpg",
-      "/city-view-kothi-room.jpg",
+      "/113509.jpg",
       "/113508.jpg"
     ],
     features: [
@@ -214,7 +214,7 @@ export const roomsData = [
     image: "/super-deluxe.jpg",
     gallery: [
       "/super-deluxe.jpg",
-      "/city-view-kothi-room.jpg",
+      "/113511.jpg",
       "/113510.jpg"
     ],
     features: [

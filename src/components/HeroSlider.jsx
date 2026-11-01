@@ -63,8 +63,8 @@ export default function HeroSlider({ onOpenBooking }) {
             idx === currentSlide ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
           }`}
         >
-          {/* Zooming Image */}
-          <div className="relative w-full h-full overflow-hidden">
+          {/* Zooming Image with Ken Burns & Parallax Depth */}
+          <div className="relative w-full h-[115%] -top-[7%] overflow-hidden" data-parallax-speed="-0.15">
             <Image
               src={slide.image}
               alt={slide.tagline}

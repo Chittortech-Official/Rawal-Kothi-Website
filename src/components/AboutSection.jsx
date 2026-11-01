@@ -31,7 +31,7 @@ export default function AboutSection({ onOpenBooking }) {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
-        <div className="text-center max-w-3xl mx-auto">
+        <div className="text-center max-w-3xl mx-auto reveal-element">
           <p className="text-[#B99470] tracking-[0.3em] text-xs sm:text-sm uppercase font-sans font-semibold mb-2">
             HERITAGE PALACE & ROOFTOP RETREAT
           </p>
@@ -44,12 +44,12 @@ export default function AboutSection({ onOpenBooking }) {
           </p>
         </div>
 
-        {/* 3 Regal Highlight Cards */}
+        {/* 3 Regal Highlight Cards with Staggered Parallax Reveal */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
           {highlights.map((item, idx) => (
             <div
               key={idx}
-              className="group bg-white p-8 rounded-none border border-[#B99470]/30 shadow-md hover:shadow-xl hover:border-[#B99470] transition-all duration-300 flex flex-col items-center text-center relative"
+              className={`group bg-white p-8 rounded-none border border-[#B99470]/30 shadow-md hover:shadow-xl hover:border-[#B99470] transition-all duration-300 flex flex-col items-center text-center relative reveal-element reveal-delay-${idx + 1}`}
             >
               <div className="w-16 h-16 rounded-full bg-[#FAF7F2] flex items-center justify-center mb-5 group-hover:bg-[#B99470]/10 transition-colors">
                 {item.icon}
@@ -68,13 +68,13 @@ export default function AboutSection({ onOpenBooking }) {
         {/* Feature Split Showcase (Palace Lobby & Story) */}
         <div className="mt-20 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           {/* Left: Image with ornate frame */}
-          <div className="lg:col-span-7 relative">
-            <div className="relative aspect-[4/3] w-full overflow-hidden shadow-2xl border-4 border-white">
+          <div className="lg:col-span-7 relative reveal-element">
+            <div className="relative aspect-[4/3] w-full overflow-hidden shadow-2xl border-4 border-white group">
               <Image
                 src="/113503.jpg"
                 alt="Grand Lobby & Stained Glass Staircase at Rawal Kothi"
                 fill
-                className="object-cover hover:scale-105 transition-transform duration-700"
+                className="object-cover group-hover:scale-108 transition-transform duration-1000"
                 sizes="(max-width: 1024px) 100vw, 60vw"
               />
               <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-6 text-white">
@@ -86,15 +86,15 @@ export default function AboutSection({ onOpenBooking }) {
                 </h4>
               </div>
             </div>
-            {/* Decorative Gold Floating Badge */}
-            <div className="hidden sm:block absolute -bottom-6 -right-6 bg-[#1A1615] text-white p-5 shadow-2xl border border-[#B99470]/40 max-w-[200px]">
+            {/* Decorative Gold Floating Badge with Parallax Offset */}
+            <div className="hidden sm:block absolute -bottom-6 -right-6 bg-[#1A1615] text-white p-5 shadow-2xl border border-[#B99470]/40 max-w-[200px]" data-parallax-speed="0.12">
               <span className="text-2xl sm:text-3xl font-serif text-[#B99470] block font-bold">100%</span>
               <span className="text-[11px] uppercase tracking-wider text-gray-300">Authentic Mewari Palace Experience</span>
             </div>
           </div>
 
           {/* Right: Rich Narrative */}
-          <div className="lg:col-span-5 flex flex-col justify-center space-y-5 lg:pl-6">
+          <div className="lg:col-span-5 flex flex-col justify-center space-y-5 lg:pl-6 reveal-element reveal-delay-2">
             <span className="text-xs uppercase tracking-[0.25em] text-[#934379] font-bold">
               HERITAGE ARCHITECTURE
             </span>

@@ -10,13 +10,13 @@ const roomsData = [
     id: 'city-view-kothi',
     name: 'City View Kothi Suite',
     subtitle: 'Signature Fresco Haven with Expansive City Vistas',
-    size: '1,615 sq. ft. (150 sq. mt.)',
-    capacity: 'Up to 3 Guests',
-    bed: 'Royal Double Bed',
+    size: '1,615 sq. ft.',
+    capacity: '3 Guests',
+    bed: 'Royal Double',
     price: '₹6,698',
-    image: '/city-view-kothi-room.jpg',
+    image: '/chetak-suite.jpg',
     desc: 'Our premier signature offering: A grand 1,615 sq. ft. luxury sanctuary showcasing traditional hand-painted peacock frescoes on royal indigo walls, panoramic city vistas, crisp air conditioning, high-speed Wi-Fi, and personalized Mewari hospitality.',
-    amenities: ['1,615 Sq. Ft. Luxury Space', 'Authentic Peacock Wall Murals', 'Panoramic City View', 'Air Conditioning', 'Modern Ensuite Bathroom', 'Mineral Water & Refreshments'],
+    amenities: ['1,615 Sq. Ft. Suite', 'Peacock Wall Murals', 'Panoramic City View', 'Air Conditioning', 'Modern Ensuite Bathroom', 'Mineral Water & Refreshments'],
   },
   {
     id: 'padmini-suite',
@@ -24,11 +24,11 @@ const roomsData = [
     subtitle: 'Your Highness Called. The Suite’s Ready.',
     size: '650 sq. ft.',
     capacity: '3 Guests',
-    bed: 'Royal King Bed',
+    bed: 'Royal King',
     price: '₹7,999',
     image: '/padmini-suite.jpg',
     desc: 'This 650 sq. ft. suite doesn’t rush you, it lets you settle in. With cosy corners to lounge, a two-seater jacuzzi to soak in, arched windows, and a vintage fan spinning above, it’s made for three but feels like your own royal hideaway.',
-    amenities: ['Two-Seater Jacuzzi', 'Private Balcony', 'Fort View', 'Complimentary Breakfast', 'High-Speed Wi-Fi', '24/7 Butler Service'],
+    amenities: ['Two-Seater Jacuzzi', 'Private Balcony', 'Fort & Garden View', 'Royal Breakfast', 'High-Speed Wi-Fi', '24/7 Butler Service'],
   },
   {
     id: 'chetak-suite',
@@ -36,11 +36,11 @@ const roomsData = [
     subtitle: 'The Suite Life, Royal Edition',
     size: '550 sq. ft.',
     capacity: '3 Guests',
-    bed: 'Four-Poster Canopy King',
+    bed: 'Canopy King',
     price: '₹6,499',
-    image: '/chetak-suite.jpg',
+    image: '/meera-suite.jpg',
     desc: 'Some stays offer more than space, they set the mood. This 550 sq. ft. suite comes with a breezy living room, vintage fan, opulent royal textiles, and a jacuzzi that practically insists you slow down.',
-    amenities: ['In-Room Jacuzzi', 'Separate Living Room', 'Vintage Teak Furniture', 'Mini Bar', 'Smart TV', 'Luxury Toiletries'],
+    amenities: ['In-Room Jacuzzi', 'Separate Living Room', 'Canopy Teak Bed', 'Smart TV & Wi-Fi', 'Mini Bar', 'Luxury Toiletries'],
   },
   {
     id: 'meera-suite',
@@ -48,11 +48,11 @@ const roomsData = [
     subtitle: 'Your Soft Landing Spot',
     size: '650 sq. ft.',
     capacity: '3 Guests',
-    bed: 'Palace Double King',
+    bed: 'Double King',
     price: '₹6,999',
     image: '/meera-suite.jpg',
     desc: 'Some spaces have a way of making you feel instantly at ease. This 650 sq. ft. suite offers a separate living room, hand-painted Mewari frescoes, a vintage fan quietly spinning above, and plenty of space for three to relax.',
-    amenities: ['Separate Living Area', 'Garden & Hill View', 'Bathtub & Shower', 'Work Desk', 'Tea/Coffee Maker', 'Complimentary High Tea'],
+    amenities: ['Private Living Room', 'Garden & Hill View', 'Bathtub & Shower', 'Royal High Tea', 'Work Desk', 'Tea/Coffee Maker'],
   },
   {
     id: 'rawal-premiere',
@@ -60,11 +60,11 @@ const roomsData = [
     subtitle: 'Maharaja’s Mini Break',
     size: '450 sq. ft.',
     capacity: '3 Guests',
-    bed: 'Handcrafted King Bed',
+    bed: 'Heritage King',
     price: '₹5,299',
     image: '/rawal-premiere.jpg',
     desc: 'Some rooms just feel made for you. This 450 sq. ft. gem, with a vintage fan, private sit-out balcony, and two-seater jacuzzi, is perfect for three and brimming with old-world charm.',
-    amenities: ['Private Balcony', 'Vintage Ceiling Fan', 'Valley View', 'Wi-Fi & OTT', '24h Room Service', 'Bathrobe & Slippers'],
+    amenities: ['Private Balcony', 'Vintage Ceiling Fan', 'Valley View', 'Bathrobe & Slippers', 'Wi-Fi & OTT', '24h Room Service'],
   },
   {
     id: 'super-deluxe',
@@ -72,11 +72,11 @@ const roomsData = [
     subtitle: 'Rest Your Case: Where Dreams Check In',
     size: '260 sq. ft.',
     capacity: '2-3 Guests',
-    bed: 'Luxury Queen / Twin',
+    bed: 'Queen / Twin',
     price: '₹4,199',
     image: '/super-deluxe.jpg',
     desc: 'More than a room, this 260 sq. ft. space tells a palace story. With arched windows and classic touches, it offers calm luxury and comfort for travellers exploring historic Chittorgarh.',
-    amenities: ['Arched Heritage Windows', 'En-suite Marble Bathroom', 'Air Conditioning', 'High Speed Wi-Fi', 'Complimentary Water & Tea', 'Daily Housekeeping'],
+    amenities: ['Arched Windows', 'Ensuite Bathroom', 'Air Conditioning', 'High Speed Wi-Fi', 'Complimentary Water', 'Daily Housekeeping'],
   },
 ];
 
@@ -106,20 +106,20 @@ export default function RoomsSection({ onSelectRoom }) {
           </p>
 
           {/* Filter Tabs */}
-          <div className="flex items-center justify-center gap-3 mt-8">
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mt-8 px-2 max-w-full">
             <button
               onClick={() => setActiveTab('all')}
-              className={`px-5 py-2 text-xs uppercase tracking-widest transition-all ${
+              className={`px-4 sm:px-6 py-2 sm:py-2.5 text-[11px] sm:text-xs uppercase tracking-[0.12em] font-semibold transition-all whitespace-nowrap ${
                 activeTab === 'all'
                   ? 'bg-[#B99470] text-white shadow-md'
                   : 'bg-white text-[#5B5E63] border border-[#B99470]/30 hover:border-[#B99470]'
               }`}
             >
-              All Accommodations
+              All Rooms
             </button>
             <button
               onClick={() => setActiveTab('suites')}
-              className={`px-5 py-2 text-xs uppercase tracking-widest transition-all ${
+              className={`px-4 sm:px-6 py-2 sm:py-2.5 text-[11px] sm:text-xs uppercase tracking-[0.12em] font-semibold transition-all whitespace-nowrap ${
                 activeTab === 'suites'
                   ? 'bg-[#B99470] text-white shadow-md'
                   : 'bg-white text-[#5B5E63] border border-[#B99470]/30 hover:border-[#B99470]'
@@ -129,7 +129,7 @@ export default function RoomsSection({ onSelectRoom }) {
             </button>
             <button
               onClick={() => setActiveTab('deluxe')}
-              className={`px-5 py-2 text-xs uppercase tracking-widest transition-all ${
+              className={`px-4 sm:px-6 py-2 sm:py-2.5 text-[11px] sm:text-xs uppercase tracking-[0.12em] font-semibold transition-all whitespace-nowrap ${
                 activeTab === 'deluxe'
                   ? 'bg-[#B99470] text-white shadow-md'
                   : 'bg-white text-[#5B5E63] border border-[#B99470]/30 hover:border-[#B99470]'
@@ -142,10 +142,10 @@ export default function RoomsSection({ onSelectRoom }) {
 
         {/* Room Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
-          {filteredRooms.map((room) => (
+          {filteredRooms.map((room, idx) => (
             <div
               key={room.id}
-              className="group bg-white rounded-none border border-[#B99470]/30 overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 flex flex-col justify-between"
+              className={`group bg-white rounded-none border border-[#B99470]/30 overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 flex flex-col justify-between reveal-element reveal-delay-${(idx % 3) + 1}`}
             >
               <div>
                 {/* Image & Price Badge */}
@@ -154,7 +154,7 @@ export default function RoomsSection({ onSelectRoom }) {
                     src={room.image}
                     alt={room.name}
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                    className="object-cover group-hover:scale-108 transition-transform duration-700"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                   <div className="absolute top-4 right-4 bg-[#1A1615]/90 backdrop-blur-sm text-white px-3 py-1.5 text-xs font-serif border border-[#B99470]/40">
@@ -164,47 +164,64 @@ export default function RoomsSection({ onSelectRoom }) {
                 </div>
 
                 {/* Content */}
-                <div className="p-6">
+                <div className="p-5 sm:p-6">
                   <p className="text-[11px] uppercase tracking-[0.2em] text-[#934379] font-bold mb-1">
                     {room.subtitle}
                   </p>
                   <h3 className="font-serif text-2xl text-[#1A1615] group-hover:text-[#B99470] transition-colors mb-3">
                     {room.name}
                   </h3>
-                  <p className="text-xs text-[#5B5E63] leading-relaxed line-clamp-3 mb-5 font-sans">
+                  <p className="text-xs text-[#5B5E63] leading-relaxed line-clamp-3 mb-4 font-sans">
                     {room.desc}
                   </p>
 
-                  {/* Room Specs Bar */}
-                  <div className="flex items-center justify-between py-3 border-y border-[#E8DFD3] text-xs text-[#2C2725] mb-5">
-                    <span className="flex items-center gap-1.5">
-                      <Maximize size={14} className="text-[#B99470]" />
-                      {room.size}
-                    </span>
-                    <span className="flex items-center gap-1.5">
-                      <Users size={14} className="text-[#B99470]" />
-                      {room.capacity}
-                    </span>
-                    <span className="flex items-center gap-1.5">
-                      <Bed size={14} className="text-[#B99470]" />
-                      {room.bed}
-                    </span>
+                  {/* Room Specs Bar - 3 Equal Balanced Columns */}
+                  <div className="grid grid-cols-3 divide-x divide-[#E8DFD3] py-2.5 my-4 border-y border-[#E8DFD3] bg-[#FAF7F2]/60">
+                    <div className="flex flex-col items-center justify-center text-center px-1">
+                      <div className="flex items-center gap-1 text-[#B99470] mb-0.5">
+                        <Maximize size={13} className="flex-shrink-0" />
+                        <span className="text-[10px] uppercase tracking-wider text-[#8A8580] font-sans">Area</span>
+                      </div>
+                      <span className="text-[11px] sm:text-xs font-medium text-[#1A1615] leading-tight font-sans">
+                        {room.size}
+                      </span>
+                    </div>
+
+                    <div className="flex flex-col items-center justify-center text-center px-1">
+                      <div className="flex items-center gap-1 text-[#B99470] mb-0.5">
+                        <Users size={13} className="flex-shrink-0" />
+                        <span className="text-[10px] uppercase tracking-wider text-[#8A8580] font-sans">Guests</span>
+                      </div>
+                      <span className="text-[11px] sm:text-xs font-medium text-[#1A1615] leading-tight font-sans">
+                        {room.capacity}
+                      </span>
+                    </div>
+
+                    <div className="flex flex-col items-center justify-center text-center px-1">
+                      <div className="flex items-center gap-1 text-[#B99470] mb-0.5">
+                        <Bed size={13} className="flex-shrink-0" />
+                        <span className="text-[10px] uppercase tracking-wider text-[#8A8580] font-sans">Bed</span>
+                      </div>
+                      <span className="text-[11px] sm:text-xs font-medium text-[#1A1615] leading-tight font-sans">
+                        {room.bed}
+                      </span>
+                    </div>
                   </div>
 
                   {/* Key Amenities */}
-                  <div className="grid grid-cols-2 gap-2 mb-6">
+                  <div className="grid grid-cols-2 gap-x-2 sm:gap-x-3 gap-y-2 mb-5">
                     {room.amenities.slice(0, 4).map((amenity, idx) => (
-                      <span key={idx} className="flex items-center gap-1.5 text-[11px] text-[#5B5E63]">
-                        <Check size={12} className="text-[#B99470] flex-shrink-0" />
-                        <span className="truncate">{amenity}</span>
-                      </span>
+                      <div key={idx} className="flex items-start gap-1.5 text-[11px] text-[#5B5E63] leading-snug">
+                        <Check size={12} className="text-[#B99470] flex-shrink-0 mt-0.5" />
+                        <span className="font-sans break-words">{amenity}</span>
+                      </div>
                     ))}
                   </div>
                 </div>
               </div>
 
               {/* Action Buttons */}
-              <div className="p-6 pt-0 flex items-center gap-3">
+              <div className="p-5 sm:p-6 pt-0 flex items-center gap-3">
                 <button
                   onClick={() => onSelectRoom(room)}
                   className="flex-1 bg-[#B99470] hover:bg-[#9E7B58] text-white py-3 text-center text-xs uppercase tracking-[0.18em] font-semibold transition-colors shadow-sm hover:shadow"
