@@ -28,7 +28,13 @@ export const metadata = {
     "Luxury Stay Chittorgarh Rajasthan",
   ],
   icons: {
-    icon: "/113503.jpg",
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.png', type: 'image/png' },
+      { url: '/favicon.ico' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/favicon.png',
   },
 };
 
