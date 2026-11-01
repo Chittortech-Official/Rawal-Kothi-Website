@@ -27,19 +27,24 @@ export default function Footer() {
           </span>
         </div>
 
-        {/* 4 Footer Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 py-12 border-b border-white/10">
-          {/* Column 1: Contact Info */}
+        {/* 3 Spacious Balanced Footer Columns */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14 py-12 border-b border-white/10">
+          {/* Column 1: Contact Info & Fort Proximity */}
           <div className="space-y-4">
             <h4 className="font-serif text-lg text-[#B99470] tracking-wider uppercase">
-              Royal Contact
+              Royal Contact & Location
             </h4>
             <div className="space-y-3 text-xs sm:text-sm text-gray-300 font-sans leading-relaxed">
               <p className="flex items-start gap-2.5">
                 <MapPin size={16} className="text-[#B99470] flex-shrink-0 mt-1" />
-                <span>Rawal Kothi, Near Maharana Medicor Sansthan, Kidwai Nagar, Chittorgarh - 312001 (1.1 km to Chittorgarh Fort)</span>
+                <span>Hotel Rawal Kothi Fort, Near Maharana Medicor Sansthan, Kidwai Nagar, Chittorgarh - 312001, Rajasthan</span>
               </p>
-              <p className="flex items-center gap-2.5">
+              <div className="p-3 bg-white/5 border border-[#B99470]/30 rounded text-xs space-y-1">
+                <p className="text-[#B99470] font-semibold">★ 5.0 Rating (485+ Reviews)</p>
+                <p className="text-gray-300">• 4 Minutes Walk to Kalika Mata Temple</p>
+                <p className="text-gray-300">• 1.1 Km to Chittorgarh Fort Entrance</p>
+              </div>
+              <p className="flex items-center gap-2.5 pt-1">
                 <Phone size={15} className="text-[#B99470] flex-shrink-0" />
                 <a href="tel:+918690142444" className="hover:text-[#B99470] transition-colors">+91 86 9014 2444</a>
               </p>
@@ -57,19 +62,19 @@ export default function Footer() {
           {/* Column 2: Accommodations & Dining */}
           <div className="space-y-4">
             <h4 className="font-serif text-lg text-[#B99470] tracking-wider uppercase">
-              Stays & Dining
+              Suites & Rooftop Dining
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-sm text-gray-300 font-sans">
+              <li><a href="#rooms" className="hover:text-[#B99470] transition-colors">City View Kothi Suite (1,615 Sq. Ft.)</a></li>
               <li><a href="#rooms" className="hover:text-[#B99470] transition-colors">Padmini Royal Suite</a></li>
               <li><a href="#rooms" className="hover:text-[#B99470] transition-colors">Chetak Heritage Suite</a></li>
               <li><a href="#rooms" className="hover:text-[#B99470] transition-colors">Meera Palace Suite</a></li>
-              <li><a href="#rooms" className="hover:text-[#B99470] transition-colors">Rawal Premiere Room</a></li>
               <li><a href="#dining" className="hover:text-[#B99470] transition-colors">Skyline Rooftop Restaurant</a></li>
-              <li><a href="#dining" className="hover:text-[#B99470] transition-colors">Sunset Gazebo Cafe</a></li>
+              <li><a href="#dining" className="hover:text-[#B99470] transition-colors">Sunset Gazebo Cafe & Platters</a></li>
             </ul>
           </div>
 
-          {/* Column 3: Quick Navigation */}
+          {/* Column 3: Quick Navigation & Map */}
           <div className="space-y-4">
             <h4 className="font-serif text-lg text-[#B99470] tracking-wider uppercase">
               Explore Rawal Kothi
@@ -80,32 +85,9 @@ export default function Footer() {
               <li><a href="#gallery" className="hover:text-[#B99470] transition-colors">Visual Photo Gallery</a></li>
               <li><a href="#offers" className="hover:text-[#B99470] transition-colors">Special Stay Packages</a></li>
               <li><a href="#location" className="hover:text-[#B99470] transition-colors">Location & Proximity</a></li>
-              <li><a href="https://maps.google.com/?q=Chittorgarh+Rajasthan" target="_blank" rel="noreferrer" className="hover:text-[#B99470] transition-colors">Directions & Map</a></li>
+              <li><a href="#faqs" className="hover:text-[#B99470] transition-colors">Guest FAQs & Policies</a></li>
+              <li><a href="https://maps.google.com/?q=Chittorgarh+Rajasthan" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 text-[#B99470] hover:underline font-medium pt-1">Directions & Google Map →</a></li>
             </ul>
-          </div>
-
-          {/* Column 4: Royal Newsletter */}
-          <div className="space-y-4">
-            <h4 className="font-serif text-lg text-[#B99470] tracking-wider uppercase">
-              Palace Gazette
-            </h4>
-            <p className="text-xs text-gray-300 leading-relaxed font-sans">
-              Subscribe to receive exclusive royal invitations, seasonal staycation packages, and festive discounts.
-            </p>
-            <form onSubmit={(e) => { e.preventDefault(); alert('Thank you for subscribing to Rawal Kothi Palace Gazette!'); }} className="space-y-2">
-              <input
-                type="email"
-                placeholder="YOUR EMAIL ADDRESS"
-                required
-                className="w-full bg-white/5 border border-white/20 focus:border-[#B99470] px-3.5 py-2.5 text-xs text-white placeholder-gray-400 outline-none uppercase font-sans transition-colors"
-              />
-              <button
-                type="submit"
-                className="w-full bg-[#B99470] hover:bg-[#9E7B58] text-[#1A1615] hover:text-white py-2.5 text-xs uppercase tracking-[0.2em] font-semibold transition-colors shadow-sm"
-              >
-                Subscribe
-              </button>
-            </form>
           </div>
         </div>
 
