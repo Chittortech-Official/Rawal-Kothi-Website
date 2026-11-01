@@ -33,8 +33,13 @@ const galleryItems = [
   },
   {
     category: 'suites',
+    title: 'City View Kothi Peacock Fresco Suite',
+    image: '/city-view-kothi-room.jpg',
+  },
+  {
+    category: 'suites',
     title: 'Padmini Royal Suite with Jacuzzi',
-    image: 'https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_550,y_0,w_3900,h_3333,r_0,c_crop/q_80,w_900,dpr_1,f_auto,fl_progressive,c_limit/kesar-bagh-palace-chittorgarh/PADMINI_SUITE_BEDROOM_c43e4857',
+    image: '/padmini-suite.jpg',
   },
   {
     category: 'dining',
@@ -54,7 +59,7 @@ const galleryItems = [
   {
     category: 'suites',
     title: 'Chetak Canopy Suite Living Room',
-    image: 'https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3197/x_364,y_0,w_4272,h_3197,r_0,c_crop/q_80,w_900,dpr_1,f_auto,fl_progressive,c_limit/kesar-bagh-palace-chittorgarh/Chetak_Suite_1_17f6eb22',
+    image: '/chetak-suite.jpg',
   },
   {
     category: 'rooftop',

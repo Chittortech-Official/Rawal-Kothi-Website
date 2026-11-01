@@ -25,7 +25,7 @@ export const resortInfo = {
 export const heroSlides = [
   {
     title: "Rawal Kothi Palace",
-    us  subtitle: "Chittorgarh’s Ode to Regal Living",
+    subtitle: "Chittorgarh’s Ode to Regal Living",
     description: "Immerse yourself in authentic Mewari royalty, hand-painted frescoes, and opulent palace suites.",
     image: "https://assets.simplotel.com/simplotel/image/upload/x_323,y_0,w_3450,h_2732,r_0,c_crop/q_80,w_1600,dpr_1,f_auto,fl_progressive,c_limit/kesar-bagh-palace-chittorgarh/facade-1",
     tag: "THE ROYAL RETREAT",
@@ -55,6 +55,34 @@ export const heroSlides = [
 
 export const roomsData = [
   {
+    id: "city-view-kothi",
+    name: "City View Kothi Suite",
+    caption: "Signature Fresco Haven with Expansive City Vistas",
+    shortDesc: "Our premier signature offering: A grand 1,615 sq. ft. luxury sanctuary showcasing traditional hand-painted peacock frescoes on royal indigo walls, panoramic city vistas, crisp air conditioning, high-speed Wi-Fi, and personalized Mewari hospitality.",
+    detailedDesc: "Perched majestically overlooking Chittorgarh Fort, the City View Kothi Suite spans 1,615 sq. ft. of pure heritage grandeur. Featuring intricately detailed peacock wall murals, plush royal double bedding, private sit-out alcoves, and premium Mewari hospitality.",
+    size: "1,615 sq. ft. (150 sq. mt.)",
+    occupancy: "Up to 3 Guests",
+    bedType: "Royal Heritage Double Bed",
+    view: "Chittorgarh Fort & City View",
+    priceStarting: "₹ 6,698",
+    image: "/city-view-kothi-room.jpg",
+    gallery: [
+      "/city-view-kothi-room.jpg",
+      "/113504.jpg",
+      "/113503.jpg"
+    ],
+    features: [
+      "1,615 Sq. Ft. Palatial Living Space",
+      "Authentic Hand-Painted Peacock Murals",
+      "Panoramic City & Fort Valley View",
+      "Modern Ensuite Marble Bathroom",
+      "Air Conditioning & Climate Control",
+      "Complimentary High-Speed Wi-Fi",
+      "24-Hour Room Service & Luggage Assistance"
+    ],
+    badge: "Most Popular Signature"
+  },
+  {
     id: "chetak-suite",
     name: "Chetak Suite",
     caption: "The Suite Life, Royal Edition",
@@ -64,11 +92,11 @@ export const roomsData = [
     occupancy: "Up to 3 Guests (2 Adults + 1 Child)",
     bedType: "Royal King Canopy Bed",
     view: "Palace Courtyard & Pool View",
-    priceStarting: "₹ 14,500",
-    image: "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3197/x_0,y_36,w_5000,h_3125,r_0,c_crop/q_80,w_1600,dpr_1,f_auto,fl_progressive,c_limit/kesar-bagh-palace-chittorgarh/Chetak_Suite_1_17f6eb22",
+    priceStarting: "₹ 6,499",
+    image: "/chetak-suite.jpg",
     gallery: [
-      "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3197/x_0,y_36,w_5000,h_3125,r_0,c_crop/q_80,w_1600,dpr_1,f_auto,fl_progressive,c_limit/kesar-bagh-palace-chittorgarh/Chetak_Suite_1_17f6eb22",
-      "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3227/x_0,y_51,w_5000,h_3125,r_0,c_crop/q_80,w_1600,dpr_1,f_auto,fl_progressive,c_limit/kesar-bagh-palace-chittorgarh/MAIN_LOBBY_1_52f3d9ad",
+      "/chetak-suite.jpg",
+      "/city-view-kothi-room.jpg",
       "/113504.jpg"
     ],
     features: [
@@ -81,7 +109,7 @@ export const roomsData = [
       "Minibar & Coffee Machine",
       "24-Hour Palace Butler Service"
     ],
-    badge: "Most Popular Suite"
+    badge: "Heritage Favourite"
   },
   {
     id: "padmini-suite",
@@ -93,10 +121,13 @@ export const roomsData = [
     occupancy: "Up to 3 Guests",
     bedType: "Custom Carved Teakwood King Bed",
     view: "Manicured Lawns & Sunset Horizon",
-    priceStarting: "₹ 16,500",
-    image: "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_0,y_266,w_5000,h_2801,r_0,c_crop/q_80,w_1600,dpr_1,f_auto,fl_progressive,c_limit/kesar-bagh-palace-chittorgarh/PADMINI_SUITE_BEDROOM_c43e4857",
+    priceStarting: "₹ 7,999",
+    image: "/padmini-suite.jpg",
     gallery: [
-      "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_0,y_266,w_5000,h_2801,r_0,c_crop/q_80,w_1600,dpr_1,f_auto,fl_progressive,c_limit/kesar-bagh-palace-chittorgarh/PADMINI_SUITE_BEDROOM_c43e4857",
+      "/padmini-suite.jpg",
+      "/city-view-kothi-room.jpg",
+      "/113506.jpg"
+    ],
       "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_395,y_0,w_4210,h_3333,r_0,c_crop/q_80,w_1600,dpr_1,f_auto,fl_progressive,c_limit/kesar-bagh-palace-chittorgarh/BLOCK_COURTYARD_2b59e8a0",
       "/113506.jpg"
     ],
@@ -122,11 +153,11 @@ export const roomsData = [
     occupancy: "Up to 3 Guests",
     bedType: "Plush Heritage Emperor Bed",
     view: "Inner Rose Garden & Heritage Courtyard",
-    priceStarting: "₹ 15,000",
-    image: "https://assets.simplotel.com/simplotel/image/upload/x_0,y_380,w_4000,h_2240,r_0,c_crop/q_80,w_1600,dpr_1,f_auto,fl_progressive,c_limit/kesar-bagh-palace-chittorgarh/MEERA_SUITE_BEDROOM_1_(1)_f7015b8e",
+    priceStarting: "₹ 6,999",
+    image: "/meera-suite.jpg",
     gallery: [
-      "https://assets.simplotel.com/simplotel/image/upload/x_0,y_380,w_4000,h_2240,r_0,c_crop/q_80,w_1600,dpr_1,f_auto,fl_progressive,c_limit/kesar-bagh-palace-chittorgarh/MEERA_SUITE_BEDROOM_1_(1)_f7015b8e",
-      "/113503.jpg",
+      "/meera-suite.jpg",
+      "/city-view-kothi-room.jpg",
       "/113507.jpg"
     ],
     features: [
@@ -151,11 +182,11 @@ export const roomsData = [
     occupancy: "Up to 3 Guests",
     bedType: "Heritage Queen / King Bed",
     view: "Fountain Garden & Courtyard",
-    priceStarting: "₹ 11,500",
-    image: "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3294/x_0,y_85,w_5000,h_3125,r_0,c_crop/q_80,w_1600,dpr_1,f_auto,fl_progressive,c_limit/kesar-bagh-palace-chittorgarh/KESAR_BAGH_PREMIERE_ROOM_0df9f214",
+    priceStarting: "₹ 5,299",
+    image: "/rawal-premiere.jpg",
     gallery: [
-      "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3294/x_0,y_85,w_5000,h_3125,r_0,c_crop/q_80,w_1600,dpr_1,f_auto,fl_progressive,c_limit/kesar-bagh-palace-chittorgarh/KESAR_BAGH_PREMIERE_ROOM_0df9f214",
-      "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3294/x_0,y_246,w_5000,h_2802,r_0,c_crop/q_80,w_1600,dpr_1,f_auto,fl_progressive,c_limit/kesar-bagh-palace-chittorgarh/KESAR_BAGH_PREMIERE_ROOM_479b0842",
+      "/rawal-premiere.jpg",
+      "/city-view-kothi-room.jpg",
       "/113508.jpg"
     ],
     features: [
@@ -180,11 +211,11 @@ export const roomsData = [
     occupancy: "Up to 3 Guests",
     bedType: "Plush King or Twin Beds",
     view: "Resort Grounds & Aravalli Hills",
-    priceStarting: "₹ 8,500",
-    image: "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3266/x_0,y_232,w_5000,h_2802,r_0,c_crop/q_80,w_1600,dpr_1,f_auto,fl_progressive,c_limit/kesar-bagh-palace-chittorgarh/SUPER_DELUXE_ROOM_1_8e5d12c2",
+    priceStarting: "₹ 4,199",
+    image: "/super-deluxe.jpg",
     gallery: [
-      "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3266/x_0,y_232,w_5000,h_2802,r_0,c_crop/q_80,w_1600,dpr_1,f_auto,fl_progressive,c_limit/kesar-bagh-palace-chittorgarh/SUPER_DELUXE_ROOM_1_8e5d12c2",
-      "/113509.jpg",
+      "/super-deluxe.jpg",
+      "/city-view-kothi-room.jpg",
       "/113510.jpg"
     ],
     features: [
