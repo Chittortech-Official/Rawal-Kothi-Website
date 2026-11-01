@@ -116,8 +116,8 @@ export default function Navbar({ onOpenBooking }) {
 
       {/* Mobile Drawer Overlay */}
       <div
-        className={`fixed inset-0 z-50 bg-black/80 backdrop-blur-md lg:hidden transition-opacity duration-300 ${
-          mobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+        className={`fixed inset-0 z-50 bg-black/80 backdrop-blur-md lg:hidden overflow-hidden transition-all duration-300 ${
+          mobileMenuOpen ? 'opacity-100 pointer-events-auto visible' : 'opacity-0 pointer-events-none invisible'
         }`}
         onClick={() => setMobileMenuOpen(false)}
       >

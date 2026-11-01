@@ -36,7 +36,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-[#FDFBF7] selection:bg-[#B99470] selection:text-white">
+    <main className="min-h-screen bg-[#FDFBF7] selection:bg-[#B99470] selection:text-white w-full max-w-full overflow-x-hidden">
       {/* Fixed Luxury Palace Navbar */}
       <Navbar onOpenBooking={handleOpenBooking} />
 

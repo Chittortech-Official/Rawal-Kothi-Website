@@ -34,8 +34,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${gilda.variable} ${poppins.variable} scroll-smooth`}>
-      <body className="antialiased font-sans bg-[#FDFBF7] text-[#2C2725]">
+    <html lang="en" className={`${gilda.variable} ${poppins.variable} scroll-smooth overflow-x-hidden w-full max-w-full`}>
+      <body className="antialiased font-sans bg-[#FDFBF7] text-[#2C2725] overflow-x-hidden w-full max-w-full">
         {children}
       </body>
     </html>

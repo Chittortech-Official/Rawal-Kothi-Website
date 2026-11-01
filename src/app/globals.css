@@ -12,13 +12,19 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+  width: 100% !important;
 }
 
 body {
   background-color: #FDFBF7;
   color: #2C2725;
   font-family: var(--font-poppins), sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  position: relative;
 }
 
 /* Custom Sandstone Scrollbar */
