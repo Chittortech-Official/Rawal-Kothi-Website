@@ -11,6 +11,7 @@ import FacilitiesSection from '../components/FacilitiesSection';
 import GallerySection from '../components/GallerySection';
 import SpecialOffersSection from '../components/SpecialOffersSection';
 import LocationSection from '../components/LocationSection';
+import FaqSection from '../components/FaqSection';
 import Footer from '../components/Footer';
 import FloatingWidgets from '../components/FloatingWidgets';
 import BookingModal from '../components/BookingModal';
@@ -65,6 +66,9 @@ export default function Home() {
 
       {/* Location, Fort Proximity & Guest Reviews */}
       <LocationSection />
+
+      {/* Frequently Asked Questions based on authentic Goibibo details */}
+      <FaqSection />
 
       {/* Grand Palace Footer */}
       <Footer />

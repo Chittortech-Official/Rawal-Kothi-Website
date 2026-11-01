@@ -1,21 +1,21 @@
 export const resortInfo = {
   name: "Rawal Kothi",
-  fullName: "Rawal Kothi Palace & Heritage Resort",
+  fullName: "Rawal Kothi Hotel & Rooftop Restaurant",
   tagline: "Chittorgarh’s Ode to Regal Living",
   description:
-    "A true heritage retreat and the premier luxury palace resort in Chittorgarh, Rawal Kothi redefines royal Mewari hospitality. Featuring hand-carved jharokhas, authentic thikri mirror artwork, painted ceilings, and sparkling chandeliers, built with the grandeur a Maharaja would call home.",
-  location: "Barada, Near Chittorgarh Fort Heritage Corridor, Chittorgarh - 312001, Rajasthan, India",
+    "A premier 3-star heritage hotel and cliffside open-air rooftop retreat located just 1.1 km from the iconic Chittorgarh Fort. Featuring hand-painted Mewari peacock frescoes, 1,615 sq. ft. City View luxury suites, authentic Rajput hospitality, and starlit dining overlooking Chittorgarh city lights.",
+  location: "Near Maharana Medicor Sansthan, Kidwai Nagar, Chittorgarh Fort Area, Chittorgarh - 312001, Rajasthan, India",
   phoneNumbers: ["+91 86 9014 2444", "+91 91 4585 8110"],
   primaryPhone: "+918690142444",
   email: "reservations@rawalkothi.com",
   inquiryEmail: "contact@rawalkothi.com",
-  checkInTime: "14:00 (2:00 PM)",
-  checkOutTime: "11:00 (11:00 AM)",
+  checkInTime: "12:00 PM",
+  checkOutTime: "12:00 PM",
   highlights: [
-    { label: "Palace Suites", value: "32 Royal Keys" },
-    { label: "Sprawling Lawns", value: "10+ Lush Acres" },
-    { label: "Heritage Dining", value: "2 Royal Venues" },
-    { label: "Chittorgarh Fort", value: "15 Mins Away" },
+    { label: "Fort Proximity", value: "1.1 Km to Fort" },
+    { label: "City View Suite", value: "1,615 Sq. Ft." },
+    { label: "Rooftop Restaurant", value: "360° Skyline View" },
+    { label: "Railway Station", value: "5.7 Km Junction" },
   ],
 };
 

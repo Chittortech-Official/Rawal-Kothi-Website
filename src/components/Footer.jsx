@@ -37,7 +37,7 @@ export default function Footer() {
             <div className="space-y-3 text-xs sm:text-sm text-gray-300 font-sans leading-relaxed">
               <p className="flex items-start gap-2.5">
                 <MapPin size={16} className="text-[#B99470] flex-shrink-0 mt-1" />
-                <span>Rawal Kothi, Near Fort Access Road, Chittorgarh, Rajasthan - 312001, India</span>
+                <span>Rawal Kothi, Near Maharana Medicor Sansthan, Kidwai Nagar, Chittorgarh - 312001 (1.1 km to Chittorgarh Fort)</span>
               </p>
               <p className="flex items-center gap-2.5">
                 <Phone size={15} className="text-[#B99470] flex-shrink-0" />
