@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-gold: #B99470;
+  --color-gold-dark: #9E7B58;
+  --color-plum: #934379;
+  --color-dark: #1A1615;
+  --color-ivory: #FDFBF7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FDFBF7;
+  color: #2C2725;
+  font-family: var(--font-poppins), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Sandstone Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1A1615;
+}
+::-webkit-scrollbar-thumb {
+  background: #B99470;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9E7B58;
+}
+
+/* Subtle Royal Jali Background pattern */
+.bg-jali-pattern {
+  background-image: radial-gradient(#B99470 0.75px, transparent 0.75px), radial-gradient(#B99470 0.75px, #FDFBF7 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+/* Slow Ken Burns effect */
+@keyframes kenburns {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+.animate-kenburns {
+  animation: kenburns 24s ease-in-out infinite alternate;
+}
+
+/* Custom text selection */
+::selection {
+  background: #B99470;
+  color: #FFFFFF;
+}
