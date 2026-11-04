@@ -308,12 +308,13 @@ export default function BookingModal({ isOpen, onClose, initialData }) {
                     onChange={(e) => setFormData({ ...formData, room: e.target.value })}
                     className="w-full bg-white border border-[#E8DFD3] focus:border-[#B99470] px-3 py-2 text-xs text-[#1A1615] outline-none"
                   >
+                    <option value="Deluxe Heritage Room (₹3,950/night)">Deluxe Heritage Room (₹3,950/night)</option>
+                    <option value="Super Deluxe Heritage Room (₹4,950/night)">Super Deluxe Heritage Room (₹4,950/night)</option>
                     <option value="City View Kothi Suite (₹6,698/night)">City View Kothi Suite (₹6,698/night)</option>
                     <option value="Padmini Royal Suite (₹7,999/night)">Padmini Royal Suite (₹7,999/night)</option>
                     <option value="Chetak Heritage Suite (₹6,499/night)">Chetak Heritage Suite (₹6,499/night)</option>
                     <option value="Meera Palace Suite (₹6,999/night)">Meera Palace Suite (₹6,999/night)</option>
                     <option value="Rawal Premiere Room (₹5,299/night)">Rawal Premiere Room (₹5,299/night)</option>
-                    <option value="Super Deluxe Heritage Room (₹4,199/night)">Super Deluxe Heritage Room (₹4,199/night)</option>
                   </select>
                 </div>
 

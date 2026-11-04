@@ -1,26 +1,38 @@
 export const resortInfo = {
-  name: "Rawal Kothi",
-  fullName: "Hotel Rawal Kothi Fort",
+  name: "Hotel Rawal Kothi Fort",
+  fullName: "Hotel Rawal Kothi Fort and Restaurant",
   tagline: "Chittorgarh’s Ode to Regal Living",
   rating: "5.0",
   ratingCount: "485+",
-  walkingHighlight: "4 minutes walk to Kalika Mata Temple",
+  walkingHighlight: "Inside Chittorgarh Fort Village",
   description:
-    "A premier 5-star rated heritage hotel (5.0 ★ by 485+ guests) and open-air rooftop restaurant situated on Chittorgarh Fort Road, just a 4-minute walk from the historic Kalika Mata Temple and 1.1 km from the main Fort entrance. Featuring 1,615 sq. ft. peacock fresco suites and panoramic sunset dining over the city.",
-  location: "Chittorgarh Fort Road, Near Bhandar Ke Ganesh Ji & Near Maharana Medicor Sansthan, Kidwai Nagar, Chittorgarh - 312001, Rajasthan, India",
-  phoneNumbers: ["+91 80588 77878", "+91 86 9014 2444", "+91 91 4585 8110"],
+    "Hotel Rawal Kothi Fort and Restaurant that glitters like gold in the moonlight, built with luxurious accessories and modern comforts having authentic heritage touch in traditional Chittorgarh style. A converted boutique luxury heritage Kothi featuring 10 well-furnished rooms and our celebrated panoramic rooftop restaurant overlooking the illuminated Chittorgarh Fort.",
+  location: "Near City View Point, Chittorgarh Fort Village, Chittorgarh - 312001 (Rajasthan) India",
+  phoneNumbers: ["+91 80588 77878", "+91 87399 96636"],
   primaryPhone: "+918058877878",
+  secondaryPhone: "+918739996636",
   whatsapp: "+918058877878",
-  email: "reservations@rawalkothi.com",
-  inquiryEmail: "contact@rawalkothi.com",
+  email: "info@hotelRawalkothiFort.in",
+  inquiryEmail: "info@hotelRawalkothiFort.in",
   checkInTime: "12:00 PM",
-  checkOutTime: "11:00 AM",
+  checkOutTime: "10:00 AM",
   diningCostForTwo: "₹800 approx.",
+  totalRooms: 10,
+  policies: {
+    childPolicy: "Stay for a child below 6 years who does not require an extra bed is complimentary. Children aged 6 and above are charged ₹1,250 + taxes per person per night.",
+    advancePayment: "50% advance payment required for booking confirmation.",
+    cancellationPolicy: "100% full refund if cancelled or modified up to 14 days before check-in. Under 14 days, 100% will be charged.",
+    restaurantTimings: {
+      breakfast: "07:30 AM – 10:30 AM",
+      lunch: "12:30 PM – 03:30 PM",
+      dinner: "06:30 PM – 10:30 PM"
+    }
+  },
   highlights: [
     { label: "Guest Rating", value: "5.0 ★ (485+ Reviews)" },
-    { label: "Kalika Mata Temple", value: "4 Mins Walk" },
-    { label: "City View Suite", value: "1,615 Sq. Ft." },
-    { label: "Chittorgarh Fort", value: "1.1 Km" },
+    { label: "Location", value: "Near City View Point" },
+    { label: "Fort Village", value: "Inside Fort Zone" },
+    { label: "Rooftop Dining", value: "Fort Panoramic View" },
   ],
 };
 
@@ -201,16 +213,49 @@ export const roomsData = [
     badge: "Balcony & Jacuzzi"
   },
   {
+    id: "deluxe-room",
+    name: "Deluxe Heritage Room",
+    caption: "Mewari Craftsmanship & Pure Heritage Comfort",
+    shortDesc: "Our authentic heritage room furnished to showcase the skill of Rajasthani artisans. Offering home-like warmth, solitude, modern AC, LED TV, and 24/7 concierge service.",
+    detailedDesc: "Converted from our heritage Kothi into a boutique sanctuary. Designed with hand-finished plaster, artisan furnishings, and essential luxuries. Regular Season: ₹3,950/night | Peak Season (Diwali / Christmas / New Year): ₹5,550/night. Extra Bed: ₹1,250 (Reg) / ₹1,750 (Peak).",
+    size: "240 sq. ft.",
+    occupancy: "Up to 3 Guests",
+    bedType: "Comfort Heritage Double Bed",
+    view: "Heritage Courtyard View",
+    priceStarting: "₹ 3,950",
+    regularPrice: "₹ 3,950",
+    peakPrice: "₹ 5,550",
+    image: "/113511.jpg",
+    gallery: [
+      "/113511.jpg",
+      "/113510.jpg",
+      "/113503.jpg"
+    ],
+    features: [
+      "Regular Season: ₹ 3,950 / Night",
+      "Peak Season: ₹ 5,550 / Night",
+      "Air Conditioning & Climate Control",
+      "Flat Screen Satellite Television",
+      "24/7 Generator Power Backup",
+      "Ensuite Bathroom with Fresh Linen",
+      "Daily Housekeeping & Laundry Service",
+      "Doctor on Call & Room Heater on Request"
+    ],
+    badge: "Official Tariff ₹3,950"
+  },
+  {
     id: "super-deluxe-room",
     name: "Super Deluxe Heritage Room",
-    caption: "Rest Your Case: Where Dreams Check In",
-    shortDesc: "More than a room, this 260 sq. ft. space tells a palace story. With arched windows and classic touches, it offers calm luxury for up to three guests.",
-    detailedDesc: "Designed for discerning travelers who cherish heritage ambiance with modern comforts. Hand-finished lime plaster walls, ornate ceiling trims, and stone latticework make every evening memorable.",
-    size: "260 sq. ft.",
+    caption: "Enhanced Boutique Comfort in the Fort Village",
+    shortDesc: "Spacious boutique luxury converted from the heritage Kothi. Elegant decor, individual ambiance, premium linen, and modern amenities designed to give you the solitude you desire.",
+    detailedDesc: "The Super Deluxe Room offers generous space and authentic Mewari styling. Because our heritage Kothi is converted into a boutique luxury hotel, each room has unique decor and ambiance. Regular Season: ₹4,950/night | Peak Season: ₹7,050/night. Extra Bed: ₹1,250 (Reg) / ₹1,750 (Peak).",
+    size: "300 sq. ft.",
     occupancy: "Up to 3 Guests",
-    bedType: "Plush King or Twin Beds",
-    view: "Resort Grounds & Aravalli Hills",
-    priceStarting: "₹ 4,199",
+    bedType: "Plush King or Twin Heritage Beds",
+    view: "City View & Hillside Ramparts",
+    priceStarting: "₹ 4,950",
+    regularPrice: "₹ 4,950",
+    peakPrice: "₹ 7,050",
     image: "/super-deluxe.jpg",
     gallery: [
       "/super-deluxe.jpg",
@@ -218,16 +263,16 @@ export const roomsData = [
       "/113510.jpg"
     ],
     features: [
-      "Arched Jharokha Windows",
-      "Classic Heritage Decor",
+      "Regular Season: ₹ 4,950 / Night",
+      "Peak Season: ₹ 7,050 / Night",
+      "High-Performance Air Conditioning",
+      "LED TV with Premium Channels",
       "Ensuite Marble Rain Shower",
-      "Work Desk & Reading Lamp",
-      "Flat Screen Satellite Television",
-      "In-room Electronic Safe",
-      "Organic Toiletries",
-      "Express Daily Housekeeping"
+      "Generator Power Backup",
+      "Express Daily Housekeeping",
+      "Tour Guide & Car Hire on Request"
     ],
-    badge: "Classic Heritage"
+    badge: "Official Tariff ₹4,950"
   },
   {
     id: "rawal-private-villa",

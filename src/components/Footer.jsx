@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { RoyalLotusCrest, OrnateDivider } from './RoyalIcons';
 import { MapPin, Phone, Mail, ArrowUp, MessageCircle } from 'lucide-react';
 
@@ -11,19 +12,22 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#1A1615] text-white pt-20 pb-12 border-t-2 border-[#B99470] relative overflow-hidden">
+    <footer className="bg-[#1A1615] text-white pt-16 pb-12 border-t-2 border-[#B99470] relative overflow-hidden">
       {/* Background Jali Watermark */}
       <div className="absolute inset-0 bg-jali-pattern opacity-10 pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Top Centered Brand Crest */}
-        <div className="flex flex-col items-center text-center pb-12 border-b border-white/10">
-          <RoyalLotusCrest className="w-14 h-14 text-[#B99470] mb-3" />
-          <span className="font-serif text-2xl sm:text-3xl text-white tracking-[0.2em] uppercase font-light">
-            RAWAL KOTHI
-          </span>
+        {/* Top Centered Brand Crest with Official Transparent Logo */}
+        <div className="flex flex-col items-center text-center pb-10 border-b border-white/10">
+          <Image
+            src="/official-logo-transparent.png"
+            alt="Hotel Rawal Kothi Fort and Restaurant"
+            width={240}
+            height={100}
+            className="h-16 sm:h-20 w-auto object-contain mb-3"
+          />
           <span className="text-[10px] text-[#B99470] tracking-[0.4em] uppercase font-sans mt-1">
-            HERITAGE PALACE & ROOFTOP RETREAT • CHITTORGARH
+            HERITAGE PALACE & ROOFTOP RETREAT • CHITTORGARH FORT
           </span>
         </div>
 
@@ -37,7 +41,7 @@ export default function Footer() {
             <div className="space-y-3 text-xs sm:text-sm text-gray-300 font-sans leading-relaxed">
               <p className="flex items-start gap-2.5">
                 <MapPin size={16} className="text-[#B99470] flex-shrink-0 mt-1" />
-                <span>Hotel Rawal Kothi Fort, Chittorgarh Fort Road, Near Bhandar Ke Ganesh Ji, Kidwai Nagar, Chittorgarh - 312001, Rajasthan</span>
+                <span>Hotel Rawal Kothi Fort and Restaurant, Near City View Point, Chittorgarh Fort Village, Chittorgarh - 312001 (Rajasthan) India</span>
               </p>
               <p className="flex items-center gap-2.5 pt-1">
                 <Phone size={15} className="text-[#B99470] flex-shrink-0" />
@@ -45,11 +49,11 @@ export default function Footer() {
               </p>
               <p className="flex items-center gap-2.5">
                 <Phone size={15} className="text-[#B99470] flex-shrink-0" />
-                <a href="tel:+918690142444" className="hover:text-[#B99470] transition-colors">+91 86 9014 2444</a>
+                <a href="tel:+918739996636" className="hover:text-[#B99470] transition-colors">+91 87399 96636</a>
               </p>
               <p className="flex items-center gap-2.5">
                 <Mail size={15} className="text-[#B99470] flex-shrink-0" />
-                <a href="mailto:reservations@rawalkothi.com" className="hover:text-[#B99470] transition-colors">reservations@rawalkothi.com</a>
+                <a href="mailto:info@hotelRawalkothiFort.in" className="hover:text-[#B99470] transition-colors">info@hotelRawalkothiFort.in</a>
               </p>
             </div>
           </div>
@@ -57,15 +61,15 @@ export default function Footer() {
           {/* Column 2: Accommodations & Dining */}
           <div className="space-y-4">
             <h4 className="font-serif text-lg text-[#B99470] tracking-wider uppercase">
-              Suites & Rooftop Dining
+              Rooms & Rooftop Dining
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-sm text-gray-300 font-sans">
+              <li><Link href="/rooms" className="hover:text-[#B99470] transition-colors">Deluxe Heritage Room (₹3,950)</Link></li>
+              <li><Link href="/rooms" className="hover:text-[#B99470] transition-colors">Super Deluxe Room (₹4,950)</Link></li>
               <li><Link href="/rooms" className="hover:text-[#B99470] transition-colors">City View Kothi Suite (1,615 Sq. Ft.)</Link></li>
-              <li><Link href="/rooms" className="hover:text-[#B99470] transition-colors">Padmini Royal Suite</Link></li>
-              <li><Link href="/rooms" className="hover:text-[#B99470] transition-colors">Chetak Heritage Suite</Link></li>
-              <li><Link href="/rooms" className="hover:text-[#B99470] transition-colors">Meera Palace Suite</Link></li>
-              <li><Link href="/rooftop-dining" className="hover:text-[#B99470] transition-colors">Skyline Rooftop Restaurant</Link></li>
-              <li><Link href="/rooftop-dining" className="hover:text-[#B99470] transition-colors">Sunset Gazebo Cafe & Platters</Link></li>
+              <li><Link href="/rooms" className="hover:text-[#B99470] transition-colors">Chetak & Padmini Suites</Link></li>
+              <li><Link href="/rooftop-dining" className="hover:text-[#B99470] transition-colors">Restaurant The Rawal Kothi</Link></li>
+              <li><Link href="/rooftop-dining" className="hover:text-[#B99470] transition-colors">Sunset Gazebo & Fort Night View</Link></li>
             </ul>
           </div>
 

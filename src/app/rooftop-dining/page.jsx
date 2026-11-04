@@ -127,23 +127,23 @@ export default function RooftopDiningPage() {
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-center text-xs font-sans">
           <div className="p-3 border-r border-[#E8DFD3] last:border-r-0">
             <Clock size={18} className="text-[#B99470] mx-auto mb-1.5" />
-            <span className="block text-gray-500 text-[10px] uppercase tracking-wider mb-0.5">Breakfast & Lunch</span>
-            <span className="text-[#1A1615] font-semibold">8:00 AM – 3:30 PM</span>
+            <span className="block text-gray-500 text-[10px] uppercase tracking-wider mb-0.5">Morning / Breakfast</span>
+            <span className="text-[#1A1615] font-semibold">07:30 AM – 10:30 AM</span>
           </div>
           <div className="p-3 border-r border-[#E8DFD3] last:border-r-0">
-            <Coffee size={18} className="text-[#B99470] mx-auto mb-1.5" />
-            <span className="block text-gray-500 text-[10px] uppercase tracking-wider mb-0.5">Golden Sunset High-Tea</span>
-            <span className="text-[#1A1615] font-semibold">4:30 PM – 7:00 PM</span>
+            <Sun size={18} className="text-[#B99470] mx-auto mb-1.5" />
+            <span className="block text-gray-500 text-[10px] uppercase tracking-wider mb-0.5">Afternoon / Lunch</span>
+            <span className="text-[#1A1615] font-semibold">12:30 PM – 03:30 PM</span>
           </div>
           <div className="p-3 border-r border-[#E8DFD3] last:border-r-0">
-            <Sparkles size={18} className="text-[#B99470] mx-auto mb-1.5" />
-            <span className="block text-gray-500 text-[10px] uppercase tracking-wider mb-0.5">Starlit Candlelight Dinner</span>
-            <span className="text-[#1A1615] font-semibold">7:00 PM – 11:30 PM</span>
+            <Moon size={18} className="text-[#B99470] mx-auto mb-1.5" />
+            <span className="block text-gray-500 text-[10px] uppercase tracking-wider mb-0.5">Evening / Fort Night View</span>
+            <span className="text-[#1A1615] font-semibold">06:30 PM – 10:30 PM</span>
           </div>
           <div className="p-3">
             <Utensils size={18} className="text-[#B99470] mx-auto mb-1.5" />
-            <span className="block text-gray-500 text-[10px] uppercase tracking-wider mb-0.5">Cuisines Served</span>
-            <span className="text-[#1A1615] font-semibold">Mewari, North Indian, Chinese</span>
+            <span className="block text-gray-500 text-[10px] uppercase tracking-wider mb-0.5">Cuisines & Pure Cooking</span>
+            <span className="text-[#1A1615] font-semibold">Indian, Chinese, Continental & Rajasthani</span>
           </div>
         </div>
       </section>

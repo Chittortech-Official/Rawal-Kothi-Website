@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X, Phone, Calendar, ChevronRight, MessageCircle, MapPin, Bed, Utensils, Image as ImageIcon, Sparkles } from 'lucide-react';
 import { RoyalLotusCrest } from './RoyalIcons';
 
@@ -54,16 +55,17 @@ export default function Navbar({ onOpenBooking }) {
         }`}
       >
         <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 flex items-center justify-between">
-          {/* Brand Logo & Royal Crest */}
-          <Link href="/" className="flex items-center gap-2 sm:gap-3 group shrink-0">
-            <RoyalLotusCrest className="w-8 h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 text-[#B99470] group-hover:scale-105 transition-transform" />
-            <div className="flex flex-col">
-              <span className="font-serif text-base sm:text-xl md:text-2xl text-white tracking-[0.16em] sm:tracking-[0.18em] uppercase font-normal leading-tight">
-                RAWAL KOTHI
-              </span>
-              <span className="text-[8px] sm:text-[9px] md:text-[10px] text-[#B99470] tracking-[0.28em] sm:tracking-[0.35em] uppercase font-sans font-medium">
-                CHITTORGARH
-              </span>
+          {/* Brand Logo: Official Transparent Logo */}
+          <Link href="/" className="flex items-center group shrink-0">
+            <div className="relative h-11 sm:h-12 md:h-14 w-auto flex items-center">
+              <Image
+                src="/official-logo-transparent.png"
+                alt="Hotel Rawal Kothi Fort and Restaurant"
+                width={170}
+                height={74}
+                className="h-10 sm:h-12 md:h-13 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                priority
+              />
             </div>
           </Link>
 
@@ -129,19 +131,17 @@ export default function Navbar({ onOpenBooking }) {
           onClick={(e) => e.stopPropagation()}
         >
           <div>
-            {/* Drawer Header */}
-            <div className="flex items-center justify-between pb-5 border-b border-[#B99470]/25">
-              <div className="flex items-center gap-2.5">
-                <RoyalLotusCrest className="w-8 h-8 text-[#B99470]" />
-                <div className="flex flex-col">
-                  <span className="font-serif text-lg text-white tracking-[0.16em] uppercase">
-                    RAWAL KOTHI
-                  </span>
-                  <span className="text-[9px] text-[#B99470] tracking-[0.25em] uppercase font-sans">
-                    CHITTORGARH FORT
-                  </span>
-                </div>
-              </div>
+            {/* Drawer Header with Official Logo */}
+            <div className="flex items-center justify-between pb-4 border-b border-[#B99470]/25">
+              <Link href="/" onClick={() => setMobileMenuOpen(false)} className="flex items-center">
+                <Image
+                  src="/official-logo-transparent.png"
+                  alt="Hotel Rawal Kothi Fort and Restaurant"
+                  width={140}
+                  height={60}
+                  className="h-10 w-auto object-contain"
+                />
+              </Link>
               <button
                 onClick={() => setMobileMenuOpen(false)}
                 className="text-white/80 hover:text-white p-1.5 rounded-full hover:bg-white/10 transition-colors"
@@ -154,7 +154,7 @@ export default function Navbar({ onOpenBooking }) {
             {/* Quick Badge */}
             <div className="mt-4 px-3 py-2 bg-[#B99470]/10 border border-[#B99470]/20 rounded text-[11px] text-[#B99470] flex items-center justify-between">
               <span>Heritage Stay & Rooftop Lounge</span>
-              <span className="font-semibold text-white">1.1 km to Fort</span>
+              <span className="font-semibold text-white">Fort Village</span>
             </div>
 
             {/* Nav list with Clear High-Contrast Links */}
@@ -193,7 +193,7 @@ export default function Navbar({ onOpenBooking }) {
 
             <div className="grid grid-cols-2 gap-2">
               <a
-                href="https://wa.me/918690142444?text=Hello%20Rawal%20Kothi,%20I%20would%20like%20to%20inquire%20about%20booking."
+                href="https://wa.me/918058877878?text=Hello%20Rawal%20Kothi,%20I%20would%20like%20to%20inquire%20about%20booking."
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center justify-center gap-1.5 bg-[#25D366]/20 border border-[#25D366]/40 text-[#25D366] py-2.5 px-2 rounded text-[11px] font-medium tracking-wider uppercase hover:bg-[#25D366] hover:text-white transition-colors"
@@ -201,7 +201,7 @@ export default function Navbar({ onOpenBooking }) {
                 <MessageCircle size={15} /> WhatsApp
               </a>
               <a
-                href="tel:+918690142444"
+                href="tel:+918058877878"
                 className="flex items-center justify-center gap-1.5 bg-white/10 border border-white/20 text-white py-2.5 px-2 rounded text-[11px] font-medium tracking-wider uppercase hover:bg-[#B99470] hover:border-[#B99470] transition-colors"
               >
                 <Phone size={14} /> Call Us
@@ -209,7 +209,7 @@ export default function Navbar({ onOpenBooking }) {
             </div>
 
             <p className="text-[10px] text-center text-gray-400 font-sans pt-1">
-              Chittorgarh Fort Heritage Zone, Rajasthan
+              Near City View Point, Chittorgarh Fort Village
             </p>
           </div>
         </div>

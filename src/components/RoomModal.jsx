@@ -139,7 +139,7 @@ export default function RoomModal({ room, isOpen, onClose, onBookRoom }) {
               </button>
 
               <a
-                href={`https://wa.me/918690142444?text=${encodeURIComponent(
+                href={`https://wa.me/918058877878?text=${encodeURIComponent(
                   `Hello Rawal Kothi, I am interested in inquiring about the ${room.name} (${room.priceStarting}/night). Please share availability.`
                 )}`}
                 target="_blank"

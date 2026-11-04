@@ -116,9 +116,9 @@ export default function ContactPage() {
                 <div>
                   <h4 className="font-serif text-base text-[#1A1615] font-medium mb-1">Palace Address</h4>
                   <p className="text-xs text-gray-600 leading-relaxed">
-                    Hotel Rawal Kothi Fort, Chittorgarh Fort Road, Near Bhandar Ke Ganesh Ji, Kidwai Nagar, Chittorgarh - 312001, Rajasthan
+                    Hotel Rawal Kothi Fort and Restaurant, Near City View Point, Chittorgarh Fort Village, Chittorgarh - 312001 (Rajasthan) India
                   </p>
-                  <p className="text-[11px] text-[#B99470] font-semibold mt-1">4 Mins Walk to Kalika Mata Temple</p>
+                  <p className="text-[11px] text-[#B99470] font-semibold mt-1">Inside Fort Village • Near City View Point</p>
                 </div>
               </div>
 
@@ -131,7 +131,7 @@ export default function ContactPage() {
                   <h4 className="font-serif text-base text-[#1A1615] font-medium mb-1">Direct Phone Lines</h4>
                   <div className="space-y-1 text-xs text-gray-600">
                     <p>Primary Desk: <a href="tel:+918058877878" className="text-[#1A1615] font-bold hover:text-[#B99470]">+91 80588 77878</a></p>
-                    <p>Reservations: <a href="tel:+918690142444" className="text-[#1A1615] font-bold hover:text-[#B99470]">+91 86 9014 2444</a></p>
+                    <p>Alternate Line: <a href="tel:+918739996636" className="text-[#1A1615] font-bold hover:text-[#B99470]">+91 87399 96636</a></p>
                   </div>
                 </div>
               </div>
@@ -145,7 +145,7 @@ export default function ContactPage() {
                   <h4 className="font-serif text-base text-[#1A1615] font-medium mb-1">Digital Assistance</h4>
                   <div className="space-y-1 text-xs text-gray-600">
                     <p>WhatsApp Desk: <a href="https://wa.me/918058877878" target="_blank" rel="noreferrer" className="text-[#25D366] font-semibold hover:underline">+91 80588 77878 (Instant)</a></p>
-                    <p>Email: <a href="mailto:reservations@rawalkothi.com" className="hover:text-[#B99470]">reservations@rawalkothi.com</a></p>
+                    <p>Official Email: <a href="mailto:info@hotelRawalkothiFort.in" className="hover:text-[#B99470]">info@hotelRawalkothiFort.in</a></p>
                   </div>
                 </div>
               </div>
@@ -158,8 +158,8 @@ export default function ContactPage() {
                 <div>
                   <h4 className="font-serif text-base text-[#1A1615] font-medium mb-1">Front Desk Hours & Check-In</h4>
                   <div className="space-y-1 text-xs text-gray-600">
-                    <p>Front Desk: <strong>24 Hours Open</strong></p>
-                    <p>Standard Check-In: <strong>12:00 PM</strong> | Check-Out: <strong>11:00 AM</strong></p>
+                    <p>Front Desk: <strong>24 Hours Open (Always Available)</strong></p>
+                    <p>Check-In: <strong>12:00 PM</strong> | Check-Out: <strong>10:00 AM</strong></p>
                   </div>
                 </div>
               </div>

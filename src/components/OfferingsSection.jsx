@@ -125,10 +125,10 @@ export default function OfferingsSection({ onOpenBooking }) {
                 Plan Your Celebration
               </button>
               <a
-                href="tel:+918690142444"
+                href="tel:+918058877878"
                 className="border border-[#B99470] text-[#D4B999] hover:bg-[#B99470] hover:text-white py-3.5 px-7 text-xs uppercase tracking-[0.2em] font-semibold transition-all text-center"
               >
-                Call Events Desk
+                Call Events Desk: +91 80588 77878
               </a>
             </div>
           </div>
